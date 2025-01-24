@@ -1,0 +1,103 @@
+/* Navbar Styling */
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a; /* Dark background for contrast */
+  color: #ffffff; /* White text color */
+  /* background-color: #007F5F;  */
+  padding: 0 30px; /* Minimal padding to reduce navbar height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Explicitly set navbar height */
+}
+
+/* Left Section Styling */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 5px; /* Minimal spacing between the logo and text */
+}
+
+.navbar-logo {
+  height: 55px;
+  width: auto;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.navbar-name {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #fff; /* White text */
+  line-height: 1; /* Adjust spacing between lines */
+}
+
+.navbar-title {
+  font-size: 28px; /* Larger font for "Bergisch Gladback Freiburg" */
+}
+
+.navbar-subtitle {
+  font-size: 18px; /* Smaller font for "University" */
+  margin-top: 2px; /* Small spacing between lines */
+}
+
+/* Right Section Styling */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline */
+  gap: 10px; /* Spacing between icon and text */
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15px;
+  width: 20px;
+}
+
+.menu-icon .line {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-text {
+  font-size: 18px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.menu-link:hover .menu-icon .line {
+  background-color: #d4d4d4; /* Light gray on hover */
+}
+
+.navbar-name:hover, .menu-link:hover .menu-text {
+  color: gray; /* Light gray on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admission-form {
+    width: 90%;
+    margin: 20px auto;
+  }
+}

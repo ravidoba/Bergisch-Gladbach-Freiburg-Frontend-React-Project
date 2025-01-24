@@ -1,0 +1,100 @@
+.business-management-item.normal-order {
+  flex-direction: row; /* Content on the right, image on the left */
+}
+
+.business-management-item.reverse-order {
+  flex-direction: row-reverse; /* Content on the left, image on the right */
+}
+.business-management-container{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.business-management-item {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: stretch; /* Ensures both sections match height */
+}
+
+.business-management-image {
+  width: 50%; /* Cover 50% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.business-management-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image fills the container */
+  border-radius: 0; /* No rounded corners */
+}
+
+.business-management-content {
+  width: 50%; /* Cover 50% of the width */
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; 
+  margin: 0px;
+  box-sizing: border-box;
+}
+.business-management-item.reverse-order .business-management-content {
+  padding-left: 0px; 
+}
+
+.business-management-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.business-management-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: black;
+  border: none;
+}
+
+.business-management-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .business-management-item {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+  }
+
+  .business-management-image,
+  .business-management-content {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .business-management-image img {
+    width: 100%; /* Ensure image scales properly */
+    height: auto; /* Adjust height for responsiveness */
+  }
+
+  .business-management-content {
+    text-align: center; /* Center align text */
+    padding: 10px;
+  }
+}

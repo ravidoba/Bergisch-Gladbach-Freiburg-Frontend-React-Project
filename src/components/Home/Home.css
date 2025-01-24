@@ -1,0 +1,229 @@
+/* Base Styles for Desktop */
+.home {
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.programs-overview, .campus-overview, .latest-news, .student-life {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.programs-overview h2, 
+.campus-overview h2, 
+.latest-news h2, 
+.student-life h2 {
+  font-size: 36px;
+  color: #1a1a1a;
+}
+
+.programs-overview p, 
+.campus-overview p, 
+.latest-news p, 
+.student-life p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.programs-images, 
+.campus-images, 
+.news-container, 
+.student-life-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.program-card, 
+.campus-card, 
+.news-item, 
+.student-life-card {
+  max-width: 250px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.program-card img, 
+.campus-card img, 
+.news-item img, 
+.student-life-card img {
+  width: 100%;
+  height: auto;
+}
+
+.program-card:hover, 
+.campus-card:hover, 
+.news-item:hover, 
+.student-life-card:hover {
+  transform: translateY(-10px);
+}
+
+.program-card p, 
+.campus-card p, 
+.news-item p, 
+.student-life-card p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Responsive Home Banner */
+.home-banner, .business-management-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-banner img, .business-management-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-banner-text, .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.home-banner-text h1, .banner-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-banner-text p, .banner-text p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #fff !important;
+}
+
+/* General Styles for Links */
+.program-card a, .campus-card a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.program-card a:hover, .campus-card a:hover {
+  color: #01bfa6;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .programs-overview, 
+  .campus-overview, 
+  .latest-news, 
+  .student-life {
+    padding: 40px 15px;
+  }
+
+  .programs-overview h2, 
+  .campus-overview h2, 
+  .latest-news h2, 
+  .student-life h2 {
+    font-size: 32px;
+  }
+
+  .programs-overview p, 
+  .campus-overview p, 
+  .latest-news p, 
+  .student-life p {
+    font-size: 16px;
+  }
+
+  .program-card, 
+  .campus-card, 
+  .news-item, 
+  .student-life-card {
+    max-width: 220px;
+  }
+
+  .home-banner-text h1, .banner-text h1 {
+    font-size: 40px;
+  }
+
+  .home-banner-text p, .banner-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-images, 
+  .campus-images, 
+  .news-container, 
+  .student-life-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-card, 
+  .campus-card, 
+  .news-item, 
+  .student-life-card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .programs-overview h2, 
+  .campus-overview h2, 
+  .latest-news h2, 
+  .student-life h2 {
+    font-size: 28px;
+  }
+
+  .programs-overview p, 
+  .campus-overview p, 
+  .latest-news p, 
+  .student-life p {
+    font-size: 14px;
+  }
+
+  .home-banner-text h1, .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .home-banner-text p, .banner-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .programs-overview, 
+  .campus-overview, 
+  .latest-news, 
+  .student-life {
+    padding: 20px 10px;
+  }
+
+  .programs-overview h2, 
+  .campus-overview h2, 
+  .latest-news h2, 
+  .student-life h2 {
+    font-size: 24px;
+  }
+
+  .home-banner-text h1, .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .home-banner-text p, .banner-text p {
+    font-size: 14px;
+  }
+
+  .program-card, 
+  .campus-card, 
+  .news-item, 
+  .student-life-card {
+    margin-bottom: 15px;
+  }
+}

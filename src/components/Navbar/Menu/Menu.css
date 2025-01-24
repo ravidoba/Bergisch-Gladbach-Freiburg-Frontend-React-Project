@@ -1,0 +1,151 @@
+.Bergisch Gladback Freiburg-university,
+.Bergisch Gladback Freiburg-university h1 {
+  color: white;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-page {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.menu-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.menu-links {
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+  width: 300px; /* Default width for menu items on desktop */
+  max-height: 400px; /* Set a max height for the menu */
+  overflow-y: auto; /* Make it scrollable */
+  flex-shrink: 0; /* Prevent menu from shrinking */
+}
+
+/* Custom Scrollbar Styles */
+.menu-links::-webkit-scrollbar {
+  width: 10px;
+}
+
+.menu-links::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.menu-links::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+.menu-links::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.menu-links li {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-links li a,
+.menu-links li span {
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+  padding-left: 15px;
+}
+
+.menu-links li a:hover,
+.menu-links li span:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.menu-links li .submenu {
+  display: none;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  background-color: #1e1e1e;
+  padding: 10px;
+  list-style: none;
+  z-index: 10;
+  min-width: 300px;
+  border: 1px solid #333;
+}
+
+/* Show submenu when active */
+.menu-links li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.submenu li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.vertical-divider {
+  width: 2px;
+  background-color: #333;
+  margin: 0 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-page h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .menu-links {
+    width: 100%; /* Full width for menu on mobile */
+    max-height: none; /* Remove height restriction */
+    padding: 0;
+  }
+
+  .menu-links li {
+    margin: 15px 0;
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .menu-links li .submenu {
+    position: relative;
+    left: 0;
+    top: 0;
+    min-width: 100%; /* Full width for submenu on mobile */
+    margin-top: 10px;
+    border: none;
+  }
+
+  .submenu li {
+    font-size: 1.5rem;
+  }
+
+  .vertical-divider {
+    display: none; /* Hide divider on smaller screens */
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "12345": {
+    "name": "John Doe",
+    "dob": "2000-01-01",
+    "enrollmentNo": "12345",
+    "course": "Computer Science",
+    "courseStartYear": "2018",
+    "courseCompletionYear": "2022",
+    "semesters": [
+      {
+        "semester": "Semester 1",
+        "term": "Fall",
+        "courses": [
+          { "code": "CS101", "title": "Introduction to CS", "grade": "A", "credits": 4 }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+/* src/components/Testimonials/Testimonials.css */
+.testimonials-container {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-around; /* Distribute testimonials evenly */
+  flex-wrap: wrap; /* Allows wrapping of items if screen width is smaller */
+  gap: 20px; /* Adds space between testimonials */
+}
+
+.testimonial {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust the width of each testimonial */
+  flex-shrink: 0; /* Prevent shrinking when resizing */
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.testimonial strong {
+  font-size: 1.2rem;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+.testimonial span {
+  font-size: 1rem;
+  color: #777;
+}

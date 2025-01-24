@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+.admission-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  border-color: #cacfd2;
+}
+
+/* Form Labels */
+.admission-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input Fields */
+.admission-form input[type="text"],
+.admission-form input[type="file"],
+.admission-form select,
+.admission-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.admission-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* Submit Button */
+.admission-form button[type="submit"] {
+  width: 100%;
+  background-color: #007B5E; /* Dark Green */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.admission-form button[type="submit"]:hover {
+  background-color: #005A43; /* Darker Green */
+}
+
+.admission-user-inputs{
+  margin: 60px;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Toast Styling (optional) */
+.Toastify__toast {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.Toastify__toast--success {
+  background-color: #28a745;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+.admission-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 20px; 
+}
+
+
+.admission-form {  
+  background-color: white;
+  width: 600px;
+    margin-top: 50px;
+  padding: 30px; 
+  border-radius: 3px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: left; 
+  box-sizing: border-box; 
+}

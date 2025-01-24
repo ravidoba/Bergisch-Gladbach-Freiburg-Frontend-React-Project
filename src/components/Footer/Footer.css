@@ -1,0 +1,126 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 0.8; /* Reduced size of left and right sections */
+  padding: 10px;
+  box-sizing: border-box;
+  min-width: 200px; /* Decreased minimum width */
+}
+
+.footer-center {
+  flex: 1.5; /* Increased size of the center section */
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-center:hover {
+  color: gray;
+}
+
+.footer-center img {
+  margin: 20px auto; /* Increased margin for spacing */
+  display: block;
+  max-width: 300px; /* Increased maximum width for a larger image */
+  max-height: 200px; /* Adjusted max height for better scaling */
+  width: 100%; /* Ensures responsive scaling */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.footer-center img,
+.footer-center h1,
+.footer-center h2 {
+  margin: auto;
+}
+
+.footer-left h3,
+.footer-right h3,
+.footer-center h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-left ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left li,
+.footer-right li {
+  margin-bottom: 8px;
+}
+
+.footer-left a,
+.footer-right a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+  color: gray;
+}
+
+.footer h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-logo {
+  display: block;
+  margin: 10px auto;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 10px 0 0 0;
+  color: #aaaaaa;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: none;
+    width: 100%; /* Full width for each section */
+    padding: 20px 0;
+  }
+
+  .footer-center img {
+    margin: 20px auto;
+    display: block;
+    max-width: 320px; /* Slightly larger for smaller screens */
+    max-height: 220px; /* Adjusted height for scaling */
+    width: 100%;
+    height: auto;
+  }
+
+  .footer h1 {
+    font-size: 1.8rem;
+  }
+
+  .footer-left ul,
+  .footer-right ul {
+    padding: 0;
+  }
+}
