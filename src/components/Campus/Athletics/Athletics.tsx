@@ -1,21 +1,18 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
 import "../../../global.css";
 
 // Import images for engineering
 import engineeringBanner from "../../../assets/Campus/AthleticsImages/Athletics Banner.png";
 //
+import BasketballImage from "../../../assets/Campus/AthleticsImages/Basketball.png";
 import FootballImage from "../../../assets/Campus/AthleticsImages/Football.png";
 import GolfImage from "../../../assets/Campus/AthleticsImages/Golf.png";
-import TennisImage from "../../../assets/Campus/AthleticsImages/Tennis.png";
-import SprintImage from "../../../assets/Campus/AthleticsImages/Race.png";
-import LongJumpImage from "../../../assets/Campus/AthleticsImages/LongJump.png";
-import PoleVaultImage from "../../../assets/Campus/AthleticsImages/LongJump.png";
-import ShotPutImage from "../../../assets/Campus/AthleticsImages/ShotPut.png";
 import HighJumpImage from "../../../assets/Campus/AthleticsImages/HighJump.png";
-import BasketballImage from "../../../assets/Campus/AthleticsImages/Basketball.png";
 import IceHockeyImage from "../../../assets/Campus/AthleticsImages/IceHockey.png";
-import Footer from "../../Footer/Footer";
+import { default as LongJumpImage, default as PoleVaultImage } from "../../../assets/Campus/AthleticsImages/LongJump.png";
+import SprintImage from "../../../assets/Campus/AthleticsImages/Race.png";
+import ShotPutImage from "../../../assets/Campus/AthleticsImages/ShotPut.png";
+import TennisImage from "../../../assets/Campus/AthleticsImages/Tennis.png";
 
 const engineering: React.FC = () => {
   const engineeringEvents = [
@@ -73,9 +70,9 @@ const engineering: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
+      
       {/* Banner Image Below Navbar */}
-      <div className="business-management-banner">
+      <div className="engineering-banner">
         <img src={engineeringBanner} alt="BusinessManagement Banner" />
         <div className="banner-text">
           <h1>Athletics</h1>
@@ -106,7 +103,7 @@ const engineering: React.FC = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 };

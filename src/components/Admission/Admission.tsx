@@ -1,11 +1,9 @@
 // AdmissionForm.tsx
-import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
-import "./Admission.css";
+import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "../Navbar/Navbar";
 import AdmissionBanner from "../../assets/Admission Banner.png";
-import Footer from "../Footer/Footer";
+import "./Admission.css";
 
 const programs = {
   Engineering: [
@@ -86,12 +84,17 @@ const Admission: React.FC = () => {
   };
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>): void => {
-    const file = e.target.files ? e.target.files[0] : null;
-    setFormData({
-      ...formData,
-      file,
-    });
+    const file = e.target.files && e.target.files.length > 0 ? e.target.files[0] : null;
+    console.log("Selected File:", file); // Debugging
+
+    if (file) {
+      setFormData((prev) => ({
+        ...prev,
+        file,
+      }));
+    }
   };
+
 
   const handleSubmit = (e: FormEvent): void => {
     e.preventDefault();
@@ -111,8 +114,12 @@ const Admission: React.FC = () => {
       return;
     }
 
-    toast.success("Form submitted successfully!");
+    // Pause for 2 seconds before showing the success message
+    setTimeout(() => {
+      toast.success("Form submitted successfully! We will reach out to you soon.");
+    }, 2000);
 
+    // Reset the form and errors after the toast
     setErrors({});
     setFormData({
       firstName: "",
@@ -127,7 +134,7 @@ const Admission: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
+
       <div className="admission-container" style={{ backgroundImage: `url(${AdmissionBanner})` }}>
         <form className="admission-form" onSubmit={handleSubmit}>
           <h2>Admission Form</h2>
@@ -206,10 +213,9 @@ const Admission: React.FC = () => {
 
             <button type="submit">Submit</button>
           </div>
-          <ToastContainer />
         </form>
+        <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar />
       </div>
-      <Footer/>
     </div>
   );
 };

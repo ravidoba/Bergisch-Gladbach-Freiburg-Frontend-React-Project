@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
 import "../../../global.css";
 
 // Import images
@@ -15,7 +14,6 @@ import HorizonImage from "../../../assets/Campus/Libraries/HorizonGraduateResear
 import IsaacImage from "../../../assets/Campus/Libraries/IsaacNewtonCenterForEngineeringAndTechnology.png";
 import RockefellerImage from "../../../assets/Campus/Libraries/JohnDRockefellerBusinessAndManagementLibrary.png";
 import MaxwellImage from "../../../assets/Campus/Libraries/MaxwellSHarperScienceAndInnovationLibrary.png";
-import Footer from "../../Footer/Footer";
 
 const Libraries: React.FC = () => {
   const libraries = [
@@ -74,9 +72,9 @@ const Libraries: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
+      
       {/* Banner Image Below Navbar */}
-      <div className="business-management-banner">
+      <div className="engineering-banner">
         <img src={LibrariesBanner} alt="BusinessManagement Banner" />
         <div className="banner-text">
           <h1>Libraries</h1>
@@ -107,7 +105,7 @@ const Libraries: React.FC = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 };

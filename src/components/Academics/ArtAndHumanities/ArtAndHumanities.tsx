@@ -1,19 +1,17 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
 import "../../../global.css";
 
 // Import images for art and humanities programs
 import ArtandHumanitiesBanner from "../../../assets/Academics/ArtsAndHumanities/Art and Humanities Banner.png";
 //
+import ArtImage from "../../../assets/Academics/ArtsAndHumanities/Arts.png";
 import HistoryImage from "../../../assets/Academics/ArtsAndHumanities/History.png";
 import LiteratureImage from "../../../assets/Academics/ArtsAndHumanities/Literature.png";
+import ManuscriptCulturesImage from "../../../assets/Academics/ArtsAndHumanities/Manuphist-Cultures.png";
 import PhilosophyImage from "../../../assets/Academics/ArtsAndHumanities/Philosophy.png";
+import ProtestantTheologyImage from "../../../assets/Academics/ArtsAndHumanities/Protestant-Theology.png";
 import ReligiousStudiesImage from "../../../assets/Academics/ArtsAndHumanities/Religious.png";
 import TranslationAndInterpretationImage from "../../../assets/Academics/ArtsAndHumanities/Translate-and-Interpretation.png";
-import ArtImage from "../../../assets/Academics/ArtsAndHumanities/Arts.png";
-import ManuscriptCulturesImage from "../../../assets/Academics/ArtsAndHumanities/Manuphist-Cultures.png";
-import ProtestantTheologyImage from "../../../assets/Academics/ArtsAndHumanities/Protestant-Theology.png";
-import Footer from "../../Footer/Footer";
 
 const ArtAndHumanities: React.FC = () => {
   const artAndHumanitiesPrograms = [
@@ -77,10 +75,10 @@ const ArtAndHumanities: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
+      
       {/* Banner Image Below Navbar */}
       <div className="engineering-banner">
-        <img src={ArtandHumanitiesBanner} alt="Art and Humanities Banner" />
+        <img src={ArtandHumanitiesBanner} alt="BusinessManagement Banner" />
         <div className="banner-text">
           <h1>Art and Humanities</h1>
           <p>Dive into the rich fields of arts and humanities, where creativity, culture, and critical thinking come together to shape your future.</p>
@@ -111,7 +109,7 @@ const ArtAndHumanities: React.FC = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 };

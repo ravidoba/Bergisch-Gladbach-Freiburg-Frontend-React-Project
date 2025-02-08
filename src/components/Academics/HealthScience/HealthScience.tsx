@@ -1,16 +1,14 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
 import "../../../global.css";
 // Import images for health science programs
 //
 import HealthScienceBanner from "../../../assets/Academics/HealthScience/Health Science Banner.png";
 
-import OpticalScienceImage from "../../../assets/Academics/HealthScience/Optical-Science.png";
-import MolecularMedicineImage from "../../../assets/Academics/HealthScience/Molecular-Medicine.png";
-import SportScienceForHealthImage from "../../../assets/Academics/HealthScience/Sports-Science-for-Health.png";
 import GlobalUrbanHealthImage from "../../../assets/Academics/HealthScience/Global-Urban-Health.png";
+import MolecularMedicineImage from "../../../assets/Academics/HealthScience/Molecular-Medicine.png";
 import NeurosciencesImage from "../../../assets/Academics/HealthScience/Neuroscience.png";
-import Footer from "../../Footer/Footer";
+import OpticalScienceImage from "../../../assets/Academics/HealthScience/Optical-Science.png";
+import SportScienceForHealthImage from "../../../assets/Academics/HealthScience/Sports-Science-for-Health.png";
 
 const HealthScience: React.FC = () => {
   const healthSciencePrograms = [
@@ -53,9 +51,9 @@ const HealthScience: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
+      
       {/* Banner Image Below Navbar */}
-      <div className="business-management-banner">
+      <div className="engineering-banner">
         <img src={HealthScienceBanner} alt="BusinessManagement Banner" />
         <div className="banner-text">
           <h1>Health Science</h1>
@@ -88,7 +86,7 @@ const HealthScience: React.FC = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 };

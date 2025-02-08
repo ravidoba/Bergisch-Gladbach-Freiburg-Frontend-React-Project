@@ -4,7 +4,7 @@
   }
 
 
-  /* 111 */
+  /* Academics and Campus */
   .engineering-item.normal-order {
     flex-direction: row;
   }
@@ -107,4 +107,13 @@
       padding: 10px;
     }
   }
-  
+  .engineering-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .engineering img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }

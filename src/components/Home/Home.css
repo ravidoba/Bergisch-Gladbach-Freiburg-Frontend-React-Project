@@ -1,3 +1,9 @@
+/* Prevent Horizontal Scrolling */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* Base Styles for Desktop */
 .home {
   color: #333;
@@ -47,6 +53,7 @@
   background-color: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  width: 100%; /* Ensure it fits within the container */
 }
 
 .program-card img, 
@@ -74,13 +81,13 @@
 }
 
 /* Responsive Home Banner */
-.home-banner, .business-management-banner {
+.home-banner {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.home-banner img, .business-management-banner img {
+.home-banner img {
   width: 100%;
   height: auto;
   display: block;
@@ -119,6 +126,44 @@
 }
 
 /* Mobile and Tablet Responsiveness */
+@media (max-width: 1280px) {
+  .programs-overview, 
+  .campus-overview, 
+  .latest-news, 
+  .student-life {
+    padding: 50px 20px;
+  }
+
+  .programs-overview h2, 
+  .campus-overview h2, 
+  .latest-news h2, 
+  .student-life h2 {
+    font-size: 34px;
+  }
+
+  .programs-overview p, 
+  .campus-overview p, 
+  .latest-news p, 
+  .student-life p {
+    font-size: 17px;
+  }
+
+  .program-card, 
+  .campus-card, 
+  .news-item, 
+  .student-life-card {
+    max-width: 230px;
+  }
+
+  .home-banner-text h1, .banner-text h1 {
+    font-size: 42px;
+  }
+
+  .home-banner-text p, .banner-text p {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1024px) {
   .programs-overview, 
   .campus-overview, 
@@ -225,5 +270,38 @@
   .news-item, 
   .student-life-card {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .programs-overview, 
+  .campus-overview, 
+  .latest-news, 
+  .student-life {
+    padding: 15px 5px;
+  }
+
+  .programs-overview h2, 
+  .campus-overview h2, 
+  .latest-news h2, 
+  .student-life h2 {
+    font-size: 22px;
+  }
+
+  .home-banner-text h1, .banner-text h1 {
+    font-size: 24px;
+  }
+
+  .home-banner-text p, .banner-text p {
+    font-size: 12px;
+  }
+
+  .program-card, 
+  .campus-card, 
+  .news-item, 
+  .student-life-card {
+    padding: 10px;
+    max-width: 100%;
+    margin-bottom: 12px;
   }
 }

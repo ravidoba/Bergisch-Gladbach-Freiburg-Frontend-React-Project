@@ -19,15 +19,20 @@ import TrademarkNotice from "./components/Footer/SecurityAndBranch/TrademarkNoti
 import AboutUs from "./components/AboutUs/AboutUs";
 import WorkAt from "./components/WorkAt/WorkAt";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import MarksSheet from "./components/Transcript/MarksSheet";
 
 const App = () => {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/admission" element={<Admission />} />
         <Route path="/transcript" element={<Transcript />} />
+        <Route path="/marks-sheet" element={<MarksSheet />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/work-at" element={<WorkAt />} />
         <Route path="/contact-us" element={<ContactUs />} />
@@ -48,6 +53,7 @@ const App = () => {
         <Route path="/report-security-issue" element={<ReportSecurityIssue />} />
         <Route path="/trademark-notice" element={<TrademarkNotice />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 };

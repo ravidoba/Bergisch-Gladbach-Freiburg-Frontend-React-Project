@@ -1,17 +1,15 @@
 import React from "react";
-import Navbar from "../../../Navbar/Navbar";
-import Footer from "../../Footer";
 import "./ReportCopyrightInfringement.css"; // You can style the page with this CSS file
 
 const ReportCopyrightIssue: React.FC = () => {
   return (
     <div>
-      <Navbar />
+      
       <div className="copyright-issue-container">
         <h1>Copyright Issue</h1>
 
         <p>
-          In compliance with the Digital Millennium Copyright Act ("DMCA"), Pub. L 105-304, Universität Ehrenfeld has appointed an agent to handle notifications of alleged copyright infringement within the Bergisch Gladback Freiburg.edu domain. If you believe your copyrighted work has been infringed, please notify our designated agent listed below.
+          In compliance with the Digital Millennium Copyright Act ("DMCA"), Pub. L 105-304, Bergisch Gladbach Freiburg Unversity has appointed an agent to handle notifications of alleged copyright infringement within the Bergisch Gladbach Freiburg.edu domain. If you believe your copyrighted work has been infringed, please notify our designated agent listed below.
         </p>
 
         <p>
@@ -20,21 +18,9 @@ const ReportCopyrightIssue: React.FC = () => {
 
         <h2>Designated Agent</h2>
         <p>
-          <strong>Dr. Lukas Berger</strong>
+          <strong>Dr. Lukas Johann</strong>
         </p>
-        <p>
-          Universität Ehrenfeld Information Technology
-          <br />
-          IT Security | Policy, Risk, and Compliance
-        </p>
-        <p>
-          +49 221 1234567
-          <br />
-          123 Innovation Strasse
-          <br />
-          Cologne, Germany 50667
-        </p>
-        <p>Email: <a href="mailto:dmca@Bergisch Gladback Freiburg.edu">dmca@Bergisch Gladback Freiburg.edu</a></p>
+        <p>Email: <a href="mailto:info@bergischgladbachfreiburg.com">info@bergischgladbachfreiburg.com</a></p>
 
         <h2>DMCA Requirements</h2>
         <p>
@@ -43,13 +29,13 @@ const ReportCopyrightIssue: React.FC = () => {
         <ul>
           <li>A physical or electronic signature of the copyright owner or an individual authorized to act on their behalf.</li>
           <li>A detailed description of the copyrighted work claimed to be infringed.</li>
-          <li>A description of the infringing material and sufficient information to enable Universität Ehrenfeld to locate it.</li>
+          <li>A description of the infringing material and sufficient information to enable Bergisch Gladbach Freiburg Unversity to locate it.</li>
           <li>Your contact details, including your address, phone number, and email.</li>
           <li>A statement confirming your good faith belief that the use of the material in question is not authorized by the copyright owner, their agent, or the law.</li>
           <li>A declaration that the information in the notification is accurate and, under penalty of perjury, that you are authorized to act on behalf of the copyright owner.</li>
         </ul>
       </div>
-      <Footer />
+      
     </div>
   );
 };

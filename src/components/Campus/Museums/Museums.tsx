@@ -1,21 +1,19 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
-import Footer from "../../Footer/Footer";
 import "../../../global.css";
 
 // Import images for museums
 import MuseumsBanner from "../../../assets/Campus/Museums/Museums Banner.png";
 //
+import QuantumImage from "../../../assets/Campus/Museums/Museum of Quantum Wonders.png";
+import AlexandriaImage from "../../../assets/Campus/Museums/The Alexandria Maritime Museum.png";
 import CarltonImage from "../../../assets/Campus/Museums/The Carlton Museum of Art and Culture.png";
 import FranklinImage from "../../../assets/Campus/Museums/The Franklin Natural History Museum.png";
-import MontgomeryImage from "../../../assets/Campus/Museums/The Montgomery Museum of Modern Art.png";
-import AlexandriaImage from "../../../assets/Campus/Museums/The Alexandria Maritime Museum.png";
-import QuantumImage from "../../../assets/Campus/Museums/Museum of Quantum Wonders.png";
 import GlobalCulturesImage from "../../../assets/Campus/Museums/The Global Cultures Museum.png";
-import WindsorImage from "../../../assets/Campus/Museums/The Windsor Museum of History and Technology.png";
-import NaturalHistoryImage from "../../../assets/Campus/Museums/The Natural History Conservatory.png";
+import MontgomeryImage from "../../../assets/Campus/Museums/The Montgomery Museum of Modern Art.png";
 import EthicalDilemmasImage from "../../../assets/Campus/Museums/The Museum of Ethical Dilemmas.png";
 import LiteraryLegaciesImage from "../../../assets/Campus/Museums/The Museum of Literary Legacies.png";
+import NaturalHistoryImage from "../../../assets/Campus/Museums/The Natural History Conservatory.png";
+import WindsorImage from "../../../assets/Campus/Museums/The Windsor Museum of History and Technology.png";
 
 const Museums: React.FC = () => {
   const museums = [
@@ -83,9 +81,9 @@ const Museums: React.FC = () => {
 
   return (
     <div>
-      <Navbar />
+      
       {/* Banner Image Below Navbar */}
-      <div className="business-management-banner">
+      <div className="engineering-banner">
         <img src={MuseumsBanner} alt="BusinessManagement Banner" />
         <div className="banner-text">
           <h1>Museums</h1>
@@ -116,7 +114,7 @@ const Museums: React.FC = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 };

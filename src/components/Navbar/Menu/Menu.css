@@ -1,5 +1,4 @@
-.Bergisch Gladback Freiburg-university,
-.Bergisch Gladback Freiburg-university h1 {
+.BergischGladbackFreiburg-university, .BergischGladbackFreiburg-university h1 {
   color: white;
   background-color: #121212;
   margin: 0;
@@ -11,7 +10,7 @@
   color: #e0e0e0;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  flex-wrap: wrap;
 }
 
 .menu-page h1 {
@@ -25,13 +24,12 @@
   list-style-type: none;
   padding: 0 20px;
   margin: 0;
-  width: 300px; /* Default width for menu items on desktop */
-  max-height: 400px; /* Set a max height for the menu */
-  overflow-y: auto; /* Make it scrollable */
-  flex-shrink: 0; /* Prevent menu from shrinking */
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  flex-shrink: 0;
 }
 
-/* Custom Scrollbar Styles */
 .menu-links::-webkit-scrollbar {
   width: 10px;
 }
@@ -56,16 +54,14 @@
   position: relative;
 }
 
-.menu-links li a,
-.menu-links li span {
+.menu-links li a, .menu-links li span {
   text-decoration: none;
   color: #e0e0e0;
   transition: color 0.3s ease;
   padding-left: 15px;
 }
 
-.menu-links li a:hover,
-.menu-links li span:hover {
+.menu-links li a:hover, .menu-links li span:hover {
   color: #ffffff;
   text-decoration: underline;
 }
@@ -83,7 +79,6 @@
   border: 1px solid #333;
 }
 
-/* Show submenu when active */
 .menu-links li:hover .submenu {
   display: block;
 }
@@ -109,34 +104,33 @@
   margin: 0 20px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .menu-page {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .menu-page h1 {
     font-size: 2rem;
     text-align: center;
   }
 
   .menu-links {
-    width: 100%; /* Full width for menu on mobile */
-    max-height: none; /* Remove height restriction */
+    width: 100%;
+    max-height: none;
     padding: 0;
   }
 
   .menu-links li {
     margin: 15px 0;
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
   }
 
   .menu-links li .submenu {
     position: relative;
     left: 0;
     top: 0;
-    min-width: 100%; /* Full width for submenu on mobile */
+    min-width: 100%;
     margin-top: 10px;
     border: none;
   }
@@ -146,6 +140,6 @@
   }
 
   .vertical-divider {
-    display: none; /* Hide divider on smaller screens */
+    display: none;
   }
 }

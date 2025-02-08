@@ -1,13 +1,13 @@
 // src/components/Home/Home.tsx
 import React from "react";
-import "./Home.css";
 import "../../index.css";
+import "./Home.css";
 // Image imports for each program
 import HomeBanner from "../../assets/Home/Home Banner.png";
 // 
-import PO_Engineering from "../../assets/Home/ProgramOverview/Engineering.png";
-import PO_BusinessManagement from "../../assets/Home/ProgramOverview/Business Management.png";
 import PO_ArtAndHumanities from "../../assets/Home/ProgramOverview/Art and Humanities.png";
+import PO_BusinessManagement from "../../assets/Home/ProgramOverview/Business Management.png";
+import PO_Engineering from "../../assets/Home/ProgramOverview/Engineering.png";
 import PO_HealthScience from "../../assets/Home/ProgramOverview/Health Science.png";
 // 
 import CO_Athletics from "../../assets/Home/CampusOverview/Athletics.png";
@@ -21,18 +21,16 @@ import SL_ClubsAndSocieties from "../../assets/Home/StudentLife/Clubs and societ
 import SL_Dining from "../../assets/Home/StudentLife/Dining.png";
 import SL_Housing from "../../assets/Home/StudentLife/Housing.png";
 // 
-import Testimonials from "./Testimonials/Testimonials"; // Correct relative path
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import '../../index.css';
+import Testimonials from "./Testimonials/Testimonials"; // Correct relative path
 
 const Home: React.FC = () => {
 
   return (
     <div className="home">
 
-      <div><Navbar /></div>
+      <div></div>
 
       <div className="home-banner">
         <img src={HomeBanner} alt="University Banner" />
@@ -145,7 +143,7 @@ const Home: React.FC = () => {
         </div>
         {/* Testomonials */}
         <div><Testimonials /></div>
-        <Footer />
+        
       </div>
     </div>
   );

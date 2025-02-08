@@ -3,15 +3,13 @@ nav.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a1a1a; /* Dark background for contrast */
-  color: #ffffff; /* White text color */
-  /* background-color: #007F5F;  */
-  padding: 0 30px; /* Minimal padding to reduce navbar height */
+  background-color: #007F5F;
+  color: #ffffff;
+  padding: 0 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  height: 80px; /* Explicitly set navbar height */
+  height: 80px;
 }
 
-/* Left Section Styling */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -21,7 +19,7 @@ nav.navbar {
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 5px; /* Minimal spacing between the logo and text */
+  gap: 5px;
 }
 
 .navbar-logo {
@@ -35,31 +33,30 @@ nav.navbar {
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  color: #fff; /* White text */
-  line-height: 1; /* Adjust spacing between lines */
+  color: #fff;
+  line-height: 1;
 }
 
 .navbar-title {
-  font-size: 28px; /* Larger font for "Bergisch Gladback Freiburg" */
+  font-size: 28px;
 }
 
 .navbar-subtitle {
-  font-size: 18px; /* Smaller font for "University" */
-  margin-top: 2px; /* Small spacing between lines */
+  font-size: 18px;
+  margin-top: 2px;
 }
 
-/* Right Section Styling */
 .navbar-right {
   display: flex;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 35px;  /* Updated padding */
 }
 
 .menu-link {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Remove underline */
-  gap: 10px; /* Spacing between icon and text */
+  text-decoration: none;
+  gap: 10px;
   cursor: pointer;
 }
 
@@ -85,19 +82,106 @@ nav.navbar {
   transition: color 0.3s ease;
 }
 
-/* Hover Effect */
 .menu-link:hover .menu-icon .line {
-  background-color: #d4d4d4; /* Light gray on hover */
+  background-color: #B9E4C9;
 }
 
 .navbar-name:hover, .menu-link:hover .menu-text {
-  color: gray; /* Light gray on hover */
+  color: #B9E4C9;
 }
 
 /* Responsive Design */
+@media (max-width: 1280px) {
+  nav.navbar {
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  .navbar-title {
+    font-size: 24px;
+  }
+
+  .navbar-subtitle {
+    font-size: 16px;
+  }
+
+  .menu-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav.navbar {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .navbar-title {
+    font-size: 22px;
+  }
+
+  .navbar-subtitle {
+    font-size: 14px;
+  }
+
+  .menu-text {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 768px) {
-  .admission-form {
-    width: 90%;
-    margin: 20px auto;
+  nav.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .navbar-left, .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+  }
+
+  .navbar-subtitle {
+    font-size: 12px;
+  }
+
+  .menu-text {
+    font-size: 14px;
+  }
+
+  .menu-link {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav.navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+  }
+
+  .navbar-subtitle {
+    font-size: 12px;
+  }
+
+  .menu-text {
+    font-size: 14px;
+  }
+
+  .logo-container {
+    gap: 3px;
+  }
+
+  .navbar-left, .navbar-right {
+    justify-content: center;  /* Center the content for smaller screens */
   }
 }

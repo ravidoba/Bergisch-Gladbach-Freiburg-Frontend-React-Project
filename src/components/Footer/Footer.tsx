@@ -22,10 +22,9 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Center Section */}
-      {/* Center Section */}
       <a href="/" className="footer-center">
-        <img src={WhiteLogo} alt="Bergisch Gladback Freiburg University Logo" className="footer-logo" />
-        <p>&copy; 2025 The President and Fellows of Bergisch Gladback Freiburg University</p>
+        <img src={WhiteLogo} alt="Bergisch Gladbach Freiburg University Logo" className="footer-logo" />
+        <p>Copyright &copy; 2025 The President and Fellows of Bergisch Gladbach Freiburg University</p>
       </a>
 
       {/* Right Section */}
@@ -33,7 +32,7 @@ const Footer: React.FC = () => {
         <h3>Get in Touch</h3>
         <ul>
           <li>
-            <a href="/contact-us">Contact Bergisch Gladback Freiburg</a>
+            <a href="/contact-us">Contact Bergisch Gladbach Freiburg</a>
           </li>
         </ul>
       </div>
