@@ -22,11 +22,12 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import MarksSheet from "./components/Transcript/MarksSheet";
+import Certificate from "./components/Other/DegreeCertificate/Certificate";
 
 const App = () => {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
@@ -52,8 +53,11 @@ const App = () => {
         <Route path="/report-copyright-infringement" element={<ReportCopyrightInfringement />} />
         <Route path="/report-security-issue" element={<ReportSecurityIssue />} />
         <Route path="/trademark-notice" element={<TrademarkNotice />} />
+        {/* Other */}
+        <Route path="/degree-certificate" element={<Certificate />} />
+
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };

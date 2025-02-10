@@ -1,0 +1,103 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 40px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.degree-certificate {
+    background: #fffdf5;
+    border: 6px solid #8b0000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    text-align: center;
+}
+
+.degree-certificate-text-with-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.degree-certificate-img {
+    width: 130px;
+    height: 130px;
+    margin-right: 25px;
+    border: 3px solid #8b0000;
+    padding: 5px;
+}
+
+.degree-certificate-degree-description {
+    text-align: center;
+    font-style: italic;
+}
+
+.degree-certificate-footer {
+    margin-top: 50px;
+}
+
+.degree-certificate-footer p {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 20px;
+    flex: 1;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.degree-certificate-footer p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background: #000;
+}
+
+.degree-certificate-footer-img {
+    width: 160px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.degree-certificate::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    border: 2px solid rgba(139, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .degree-certificate {
+        padding: 40px;
+    }
+
+    .degree-certificate-text-with-image {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .degree-certificate-text-with-image img {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
