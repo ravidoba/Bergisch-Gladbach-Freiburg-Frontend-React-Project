@@ -10,42 +10,21 @@
       "semester": "Semester 1 (Fall)",
       "courses": [
         {
-          "title": "Mathematics I: Calculus and Linear Algebra",
-          "code": "MA101",
-          "credits": 4,
-          "grade": "A",
-          "examDate": "2016-02-20"
-        },
-        {
-          "title": "Physics I: Mechanics and Properties of Matter",
-          "code": "PH101",
-          "credits": 4,
-          "grade": "B",
-          "examDate": "2016-02-22"
-        },
-        {
-          "title": "Chemistry I: General and Inorganic Chemistry",
-          "code": "CH101",
-          "credits": 3,
-          "grade": "B",
-          "examDate": "2016-02-23"
-        },
-        {
-          "title": "Introduction to Computing: Basics of Computer Science",
+          "title": "Introduction to Programming with C",
           "code": "CS101",
-          "credits": 3,
+          "credits": 4,
           "grade": "A",
           "examDate": "2016-02-24"
         },
         {
-          "title": "Engineering Graphics: Technical Drawing and Design",
+          "title": "Engineering Graphics",
           "code": "EG101",
           "credits": 2,
           "grade": "B",
           "examDate": "2016-02-25"
         },
         {
-          "title": "Humanities and Social Sciences (HSS): Communication Skills",
+          "title": "Communication Skills",
           "code": "HS101",
           "credits": 2,
           "grade": "A",
@@ -57,45 +36,24 @@
       "semester": "Semester 2 (Spring)",
       "courses": [
         {
-          "title": "Mathematics II: Differential Equations and Complex Analysis",
-          "code": "MA102",
-          "credits": 4,
-          "grade": "B",
-          "examDate": "2016-07-10"
-        },
-        {
-          "title": "Physics II: Electricity and Magnetism",
-          "code": "PH102",
-          "credits": 4,
-          "grade": "A",
-          "examDate": "2016-07-12"
-        },
-        {
-          "title": "Chemistry II: Organic and Physical Chemistry",
-          "code": "CH102",
-          "credits": 3,
-          "grade": "B",
-          "examDate": "2016-07-14"
-        },
-        {
-          "title": "Programming and Data Structures",
+          "title": "Object-Oriented Programming with C++",
           "code": "CS102",
           "credits": 4,
-          "grade": "A",
+          "grade": "B",
           "examDate": "2016-07-16"
         },
         {
-          "title": "Basic Electrical Engineering: Fundamentals of Electrical Circuits",
+          "title": "Basic Electrical Engineering",
           "code": "EE101",
           "credits": 3,
           "grade": "B",
           "examDate": "2016-07-18"
         },
         {
-          "title": "HSS: Technical Writing",
-          "code": "HS102",
-          "credits": 2,
-          "grade": "A",
+          "title": "Computer Hardware Fundamentals",
+          "code": "CH201",
+          "credits": 3,
+          "grade": "B",
           "examDate": "2016-07-20"
         }
       ]
@@ -104,46 +62,25 @@
       "semester": "Semester 3 (Fall)",
       "courses": [
         {
-          "title": "Discrete Mathematics: Logic, Set Theory, and Graph Theory",
-          "code": "MA201",
-          "credits": 4,
-          "grade": "A",
-          "examDate": "2017-02-20"
-        },
-        {
-          "title": "Data Structures and Algorithms",
+          "title": "Java Programming",
           "code": "CS201",
-          "credits": 4,
-          "grade": "A",
+          "credits": 3,
+          "grade": "C",
           "examDate": "2017-02-22"
         },
         {
-          "title": "Computer Organization and Architecture",
+          "title": "Data Structures and Algorithms",
           "code": "CS202",
           "credits": 4,
           "grade": "B",
           "examDate": "2017-02-24"
         },
         {
-          "title": "Digital Logic Design: Boolean Algebra and Circuit Design",
-          "code": "EE201",
-          "credits": 3,
-          "grade": "B",
-          "examDate": "2017-02-26"
-        },
-        {
-          "title": "Probability and Statistics: Fundamentals of Probability Theory",
-          "code": "MA202",
-          "credits": 3,
-          "grade": "B",
-          "examDate": "2017-02-28"
-        },
-        {
-          "title": "HSS: Ethics and Professional Practice",
+          "title": "Technical Writing & Presentation",
           "code": "HS201",
           "credits": 2,
           "grade": "A",
-          "examDate": "2017-03-02"
+          "examDate": "2017-02-26"
         }
       ]
     },
@@ -151,46 +88,25 @@
       "semester": "Semester 4 (Spring)",
       "courses": [
         {
-          "title": "Operating Systems: Concepts and Design",
+          "title": "Web Development with HTML, CSS, and JavaScript",
           "code": "CS301",
           "credits": 4,
           "grade": "A",
           "examDate": "2017-07-10"
         },
         {
-          "title": "Database Management Systems: Relational Databases and SQL",
+          "title": "Database Management Systems (SQL)",
           "code": "CS302",
           "credits": 4,
           "grade": "B",
           "examDate": "2017-07-12"
         },
         {
-          "title": "Computer Networks: Data Communication and Networking",
-          "code": "CS303",
-          "credits": 3,
-          "grade": "A",
-          "examDate": "2017-07-14"
-        },
-        {
-          "title": "Software Engineering: Software Development Life Cycle",
-          "code": "CS304",
+          "title": "Computer Architecture & Organization",
+          "code": "CH301",
           "credits": 3,
           "grade": "B",
-          "examDate": "2017-07-16"
-        },
-        {
-          "title": "Theory of Computation: Automata and Formal Languages",
-          "code": "CS305",
-          "credits": 3,
-          "grade": "A",
-          "examDate": "2017-07-18"
-        },
-        {
-          "title": "HSS: Management Principles",
-          "code": "HS302",
-          "credits": 2,
-          "grade": "A",
-          "examDate": "2017-07-20"
+          "examDate": "2017-07-14"
         }
       ]
     },
@@ -198,46 +114,25 @@
       "semester": "Semester 5 (Fall)",
       "courses": [
         {
-          "title": "Design and Analysis of Algorithms: Algorithmic Techniques and Complexity",
+          "title": "Python Programming",
           "code": "CS401",
-          "credits": 4,
-          "grade": "A",
+          "credits": 3,
+          "grade": "C",
           "examDate": "2018-02-20"
         },
         {
-          "title": "Compiler Design: Theory and Practice",
+          "title": "Software Engineering",
           "code": "CS402",
           "credits": 3,
           "grade": "B",
           "examDate": "2018-02-22"
         },
         {
-          "title": "Artificial Intelligence: Machine Learning and Expert Systems",
-          "code": "CS403",
-          "credits": 4,
-          "grade": "A",
-          "examDate": "2018-02-24"
-        },
-        {
-          "title": "Computer Graphics: Rendering and Visualization",
-          "code": "CS404",
-          "credits": 3,
-          "grade": "A",
-          "examDate": "2018-02-26"
-        },
-        {
-          "title": "Elective I: Advanced Topics in Computer Science",
-          "code": "CS405",
-          "credits": 3,
-          "grade": "B",
-          "examDate": "2018-02-28"
-        },
-        {
-          "title": "HSS: Entrepreneurship",
-          "code": "HS401",
+          "title": "Business Communication",
+          "code": "HS301",
           "credits": 2,
           "grade": "A",
-          "examDate": "2018-03-02"
+          "examDate": "2018-02-24"
         }
       ]
     },
@@ -245,46 +140,25 @@
       "semester": "Semester 6 (Spring)",
       "courses": [
         {
-          "title": "Distributed Systems: Principles and Applications",
+          "title": "Mobile App Development with Android (Kotlin & Java)",
           "code": "CS501",
           "credits": 4,
           "grade": "A",
           "examDate": "2018-07-10"
         },
         {
-          "title": "Web Technologies: Internet Programming and Web Development",
+          "title": "Information Security and Cryptography",
           "code": "CS502",
-          "credits": 3,
-          "grade": "A",
-          "examDate": "2018-07-12"
-        },
-        {
-          "title": "Information Security: Cryptography and Network Security",
-          "code": "CS503",
           "credits": 3,
           "grade": "B",
           "examDate": "2018-07-14"
         },
         {
-          "title": "Elective II: Advanced Topics in Computer Science",
-          "code": "CS504",
-          "credits": 3,
-          "grade": "A",
-          "examDate": "2018-07-16"
-        },
-        {
-          "title": "Elective III: Advanced Topics in Computer Science",
-          "code": "CS505",
+          "title": "Embedded Systems & IoT",
+          "code": "CH401",
           "credits": 3,
           "grade": "B",
-          "examDate": "2018-07-18"
-        },
-        {
-          "title": "HSS: Business Communication",
-          "code": "HS501",
-          "credits": 2,
-          "grade": "A",
-          "examDate": "2018-07-20"
+          "examDate": "2018-07-16"
         }
       ]
     },
@@ -292,32 +166,25 @@
       "semester": "Semester 7 (Fall)",
       "courses": [
         {
-          "title": "Major Project Part I: Project Planning and Design",
+          "title": "Full Stack Development with MERN Stack (MongoDB, Express.js, React, Node.js)",
           "code": "CS601",
           "credits": 4,
           "grade": "A",
           "examDate": "2019-02-20"
         },
         {
-          "title": "Elective IV: Advanced Topics in Computer Science",
+          "title": "Cloud Computing with AWS and DevOps",
           "code": "CS602",
           "credits": 3,
           "grade": "B",
           "examDate": "2019-02-22"
         },
         {
-          "title": "Elective V: Advanced Topics in Computer Science",
-          "code": "CS603",
+          "title": "Networking & System Administration",
+          "code": "CH501",
           "credits": 3,
           "grade": "A",
           "examDate": "2019-02-24"
-        },
-        {
-          "title": "HSS: Leadership and Teamwork",
-          "code": "HS601",
-          "credits": 2,
-          "grade": "A",
-          "examDate": "2019-02-26"
         }
       ]
     },
@@ -325,34 +192,28 @@
       "semester": "Semester 8 (Spring)",
       "courses": [
         {
-          "title": "Major Project Part II: Implementation and Evaluation",
+          "title": "Machine Learning with Python & TensorFlow",
           "code": "CS701",
-          "credits": 4,
-          "grade": "A",
+          "credits": 3,
+          "grade": "C",
           "examDate": "2019-07-10"
         },
         {
-          "title": "Elective VI: Advanced Topics in Computer Science",
+          "title": "Cyber Security and Ethical Hacking",
           "code": "CS702",
           "credits": 3,
-          "grade": "A",
+          "grade": "B",
           "examDate": "2019-07-12"
         },
         {
-          "title": "Elective VII: Advanced Topics in Computer Science",
-          "code": "CS703",
+          "title": "AI & Robotics",
+          "code": "CH601",
           "credits": 3,
-          "grade": "B",
-          "examDate": "2019-07-14"
-        },
-        {
-          "title": "HSS: Professional Ethics",
-          "code": "HS701",
-          "credits": 2,
           "grade": "A",
-          "examDate": "2019-07-16"
+          "examDate": "2019-07-14"
         }
       ]
     }
   ]
 }
+  

@@ -1,0 +1,227 @@
+.marksheet-transcript-banner {
+  background: #f5f5f5;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.marksheet-marks-sheet-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.marksheet-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  /* text-transform: uppercase; */
+}
+
+.marksheet-title {
+  margin: 0;
+  padding: 0;
+}
+
+.marksheet-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.marksheet-student-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.marksheet-student-info p {
+  margin: 5px 0;
+}
+
+.marksheet-semester-wrapper {
+  margin-bottom: 30px;
+}
+
+.marksheet-semester-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007F5F;
+  padding-bottom: 5px;
+}
+
+.marksheet-courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.marksheet-courses-table th,
+.marksheet-courses-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.marksheet-courses-table th {
+  background-color: #007F5F;
+  color: white;
+}
+
+.marksheet-download-btn {
+  display: block;
+  width: 200px;
+  margin: 30px auto;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007F5F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.marksheet-download-btn:hover {
+  background-color: #007F5F;
+}
+
+.marksheet-page-break {
+  page-break-before: always;
+}
+
+/* .marksheet-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.marksheet-logo-container img {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.marksheet-logo-container span {
+  font-size: 20px;
+  color: #007F5F;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+} */
+.marksheet-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.marksheet-logo-container img {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.marksheet-logo-container span {
+  font-size: 26px; /* Increase font size for university name */
+  color: #007F5F;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.marksheet-title {
+  text-align: center;
+  font-size: 24px; /* Adjust size to make it smaller */
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.marksheet-title {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .marksheet-title {
+    font-size: 22px;
+  }
+
+  .marksheet-semester-title {
+    font-size: 20px;
+  }
+
+  .marksheet-courses-table th,
+  .marksheet-courses-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .marksheet-download-btn {
+    width: 180px;
+  }
+}
+
+.marksheet-semester-summary {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.marksheet-semester-summary h3 {
+  font-size: 20px;
+  color: #007F5F;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.marksheet-semester-summary p {
+  margin: 8px 0;
+  font-weight: normal;
+}
+
+.marksheet-semester-summary p strong {
+  font-weight: bold;
+}
+
+.marksheet-semester-summary .marksheet-gpa,
+.marksheet-semester-summary .marksheet-total-credits {
+  font-size: 16px;
+  color: #333;
+}
+
+.marksheet-semester-summary .marksheet-gpa {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .marksheet-semester-summary {
+    padding: 10px;
+  }
+
+  .marksheet-semester-summary h3 {
+    font-size: 18px;
+  }
+
+  .marksheet-semester-summary p {
+    font-size: 14px;
+  }
+}

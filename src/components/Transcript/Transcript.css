@@ -231,3 +231,199 @@ body {
   background-repeat: no-repeat;
   padding: 20px;
 }
+
+/* General Print Styles */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .marks-sheet-container {
+    background-color: #f4f7fb;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #333;
+    box-shadow: none;
+    page-break-before: always; /* Force page break before each new sheet */
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 4px solid #2c3e50;
+    padding-bottom: 10px;
+  }
+
+  .semester-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .student-info {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .student-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .student-info strong {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  th {
+    background-color: #f0f4f8;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  td {
+    background-color: #fafafa;
+    color: #333;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f7f7f7;
+  }
+
+  tr:hover td {
+    background-color: #f0f0f0;
+  }
+
+  .semester-summary {
+    margin-top: 25px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    color: #333;
+  }
+
+  .semester-summary p {
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .semester-summary strong {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  .semester-summary p strong {
+    color: #007F5F;
+    font-size: 18px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .logo-container img {
+    width: 40px;
+    height: auto;
+  }
+
+  /* Print Pagination Styles */
+  .marks-sheet-container {
+    page-break-after: always;
+  }
+
+  .marks-sheet-container:last-child {
+    page-break-after: auto;
+  }
+
+  /* Hide unnecessary elements while printing */
+  .download-btn {
+    display: none;
+  }
+
+  /* Header and Footer Adjustments */
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+
+  header, footer {
+    display: none;
+  }
+
+  .semester-summary .gpa-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .gpa-container .gpa-box,
+  .gpa-container .credits-box {
+    background-color: #f0f4f8;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .gpa-container .gpa-box {
+    background-color: #eaf0f4;
+  }
+
+  .gpa-container .credits-box {
+    background-color: #f4f8f2;
+  }
+
+  .gpa-container .gpa-box:hover,
+  .gpa-container .credits-box:hover {
+    transform: scale(1);
+  }
+}
+
+

@@ -22,7 +22,8 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import MarksSheet from "./components/Transcript/MarksSheet";
-import Certificate from "./components/Other/DegreeCertificate/Certificate";
+import MarksSheetA4 from "./components/Transcript/MarksSheetA4";
+// import Certificate from "./components/Other/DegreeCertificate/Certificate";
 
 const App = () => {
   return (
@@ -54,7 +55,8 @@ const App = () => {
         <Route path="/report-security-issue" element={<ReportSecurityIssue />} />
         <Route path="/trademark-notice" element={<TrademarkNotice />} />
         {/* Other */}
-        <Route path="/degree-certificate" element={<Certificate />} />
+        <Route path="/mark-sheet" element={<MarksSheet />} />
+        <Route path="/mark-sheet-A4" element={<MarksSheetA4 />} />
 
       </Routes>
       <Footer />

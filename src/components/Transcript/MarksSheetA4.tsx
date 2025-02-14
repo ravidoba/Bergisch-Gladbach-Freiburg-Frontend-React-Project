@@ -1,10 +1,10 @@
 import data from './BGFBTCSE00088385.json';
-// import './MarksSheetA4.css';
-import TranscriptBanner from "../../assets/Transcript Banner.png";
-import BlackLogo from "../../../public/Black color logo.png";
+import './MarksSheetA4.css';
 import { useRef } from 'react';
 import html2pdf from 'html2pdf.js';
+import Logo from '../../../public/Black color logo.png';
 
+// Define TypeScript types
 interface Course {
   title: string;
   code: string;
@@ -47,8 +47,9 @@ const MarksSheetA4 = () => {
 
     const gpa = weightedGradeSum / totalCredits;
     return { totalCredits, gpa: gpa.toFixed(2) };
-  };
+  }
 
+  // Calculate total credits and GPA for all semesters
   const totalCreditsAllSemesters = semesters.reduce((sum, semester) => {
     const { totalCredits } = calculateGPA(semester.courses);
     return sum + totalCredits;
@@ -65,10 +66,9 @@ const MarksSheetA4 = () => {
   const handleDownloadPDF = () => {
     const element = marksSheetRef.current!;
     const options = {
-      margin: 3,
+      margin: 5,  // Reduced margin
       filename: `${studentDetails.name}_Transcript.pdf`,
-      image: { type: 'png', quality: 0.4 }, // Reduced image quality
-      html2canvas: { scale: 1.5 }, // Reduced canvas scale for smaller file size
+      html2canvas: { scale: 2 },
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
 
@@ -76,14 +76,14 @@ const MarksSheetA4 = () => {
   };
 
   return (
-    <div className="transcript-banner" style={{ backgroundImage: `url(${TranscriptBanner})` }}>
-      <div className="marks-sheet-container" ref={marksSheetRef}>
-        <div className="logo-container">
-          <img src={BlackLogo} alt="Logo" />
-          Bergisch Gladbach Freiburg University
+    <div className="marksheet-transcript-banner">
+      <div className="marksheet-marks-sheet-container" ref={marksSheetRef}>
+        <div className='marksheet-logo-container'>
+          <img src={Logo} alt="Logo" />
+          <span>Bergisch Gladbach Freiburg University</span>
         </div>
-        <h1 className="title">Student Transcript</h1>
-        <div className="student-info">
+        <h1 className="marksheet-title">Student Transcript</h1>
+        <div className="marksheet-student-info">
           <p><strong>Student Name:</strong> {studentDetails.name}</p>
           <p><strong>Student ID:</strong> {studentDetails.id}</p>
           <p><strong>Date of Birth:</strong> {studentDetails.dob}</p>
@@ -93,44 +93,49 @@ const MarksSheetA4 = () => {
         {semesters.map((semester, index) => {
           const { totalCredits, gpa } = calculateGPA(semester.courses);
           return (
-            <div key={index} className={`semester-wrapper ${index % 2 === 1 ? "page-break" : ""}`}>
-              <h2 className="semester-title">{semester.semester}</h2>
-              <table className="courses-table">
-                <thead>
-                  <tr>
-                    <th>Course</th>
-                    <th>Code</th>
-                    <th>Credits</th>
-                    <th>Grade</th>
-                    <th>Exam Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {semester.courses.map((course, idx) => (
-                    <tr key={idx}>
-                      <td>{course.title}</td>
-                      <td>{course.code}</td>
-                      <td>{course.credits}</td>
-                      <td>{course.grade}</td>
-                      <td>{course.examDate}</td>
+            <div key={index} className={`marksheet-semester-wrapper ${index % 2 === 1 ? "marksheet-page-break" : ""}`}>
+              <div className="marksheet-semester">
+                <h2 className="marksheet-semester-title">{semester.semester}</h2>
+                <table className="marksheet-courses-table">
+                  <thead>
+                    <tr>
+                      <th>Course Title</th>
+                      <th>Course Code</th>
+                      <th>Credits</th>
+                      <th>Grade</th>
+                      <th>Exam Date</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-              <p><strong>Total Credits:</strong> {totalCredits}</p>
-              <p><strong>GPA:</strong> {gpa}</p>
+                  </thead>
+                  <tbody>
+                    {semester.courses.map((course, idx) => (
+                      <tr key={idx}>
+                        <td>{course.title}</td>
+                        <td>{course.code}</td>
+                        <td>{course.credits}</td>
+                        <td>{course.grade}</td>
+                        <td>{course.examDate}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <div className="marksheet-semester-summary">
+                  <p><strong>Total Credits Earned:</strong> {totalCredits}</p>
+                  <p><strong>Overall GPA:</strong> {gpa}</p>
+                </div>
+              </div>
             </div>
           );
         })}
 
-        <div className="semester-summary">
-          <h3><strong>Overall Summary</strong></h3>
-          <p><strong>Total Credits:</strong> {totalCreditsAllSemesters}</p>
-          <p><strong>GPA:</strong> {overallGPA}</p>
+        {/* Overall Summary at the End */}
+        <div className="marksheet-semester-summary">
+          <h3><strong>Total of All Semesters</strong></h3>
+          <p><strong>Total Credits Earned:</strong> {totalCreditsAllSemesters}</p>
+          <p><strong>Overall GPA (All Semesters):</strong> {overallGPA}</p>
         </div>
       </div>
 
-      <button className="download-btn" onClick={handleDownloadPDF}>Download PDF</button>
+      <button className="marksheet-download-btn" onClick={handleDownloadPDF}>Download PDF</button>
     </div>
   );
 }

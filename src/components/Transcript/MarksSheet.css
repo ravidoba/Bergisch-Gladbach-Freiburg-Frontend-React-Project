@@ -1,4 +1,4 @@
-/* Main Container */
+Main Container */
 .marks-sheet-container {
   background-color: #f4f7fb;
   padding: 40px;
@@ -306,4 +306,3 @@ tr:hover td {
     width: 45%;
   }
 }
-/* Download Button */
