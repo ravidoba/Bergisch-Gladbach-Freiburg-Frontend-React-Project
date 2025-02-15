@@ -29,6 +29,13 @@
           "credits": 2,
           "grade": "A",
           "examDate": "2016-02-26"
+        },
+        {
+          "title": "Discrete Mathematics for Computer Science",
+          "code": "MA101",
+          "credits": 3,
+          "grade": "B",
+          "examDate": "2016-02-28"
         }
       ]
     },
@@ -55,6 +62,13 @@
           "credits": 3,
           "grade": "B",
           "examDate": "2016-07-20"
+        },
+        {
+          "title": "Linear Algebra and Probability for Computer Science",
+          "code": "MA102",
+          "credits": 3,
+          "grade": "A",
+          "examDate": "2016-07-22"
         }
       ]
     },

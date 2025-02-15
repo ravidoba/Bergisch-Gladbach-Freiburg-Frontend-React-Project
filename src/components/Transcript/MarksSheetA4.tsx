@@ -84,10 +84,13 @@ const MarksSheetA4 = () => {
         </div>
         <h1 className="marksheet-title">Student Transcript</h1>
         <div className="marksheet-student-info">
-          <p><strong>Student Name:</strong> {studentDetails.name}</p>
-          <p><strong>Student ID:</strong> {studentDetails.id}</p>
+          <p><strong>Name:</strong> {studentDetails.name}</p>
+          <p><strong>Enrollment No:</strong> {studentDetails.id}</p>
           <p><strong>Date of Birth:</strong> {studentDetails.dob}</p>
           <p><strong>Program:</strong> {studentDetails.program}</p>
+          <p><strong>Course Start Year:</strong> 2015</p>
+          <p><strong>Course Passing Year:</strong> 2019</p>
+          <br />
         </div>
 
         {semesters.map((semester, index) => {
@@ -133,6 +136,11 @@ const MarksSheetA4 = () => {
           <p><strong>Total Credits Earned:</strong> {totalCreditsAllSemesters}</p>
           <p><strong>Overall GPA (All Semesters):</strong> {overallGPA}</p>
         </div>
+        {/* Footer Section */}
+        <div className="marksheet-footer">
+          <p><strong>Issued by:</strong> Bergisch Gladbach Freiburg University</p>
+        </div>
+
       </div>
 
       <button className="marksheet-download-btn" onClick={handleDownloadPDF}>Download PDF</button>

@@ -23,7 +23,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import MarksSheet from "./components/Transcript/MarksSheet";
 import MarksSheetA4 from "./components/Transcript/MarksSheetA4";
-// import Certificate from "./components/Other/DegreeCertificate/Certificate";
 
 const App = () => {
   return (
@@ -33,8 +32,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/admission" element={<Admission />} />
+        {/*  */}
         <Route path="/transcript" element={<Transcript />} />
-        <Route path="/marks-sheet" element={<MarksSheet />} />
+        <Route path="/transcript/BGFBTCSE00088385" element={<MarksSheet />} />
+        <Route path="/mark-sheet-A4" element={<MarksSheetA4 />} />
+        {/*  */}
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/work-at" element={<WorkAt />} />
         <Route path="/contact-us" element={<ContactUs />} />
@@ -54,9 +56,6 @@ const App = () => {
         <Route path="/report-copyright-infringement" element={<ReportCopyrightInfringement />} />
         <Route path="/report-security-issue" element={<ReportSecurityIssue />} />
         <Route path="/trademark-notice" element={<TrademarkNotice />} />
-        {/* Other */}
-        <Route path="/mark-sheet" element={<MarksSheet />} />
-        <Route path="/mark-sheet-A4" element={<MarksSheetA4 />} />
 
       </Routes>
       <Footer />

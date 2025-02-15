@@ -18,7 +18,7 @@ const TranscriptPage: React.FC = () => {
 
     if (foundStudentData) {
       setError("");
-      navigate("/marks-sheet"); // Redirect to MarksSheet page
+      navigate("/transcript/BGFBTCSE00088385"); // Redirect to MarksSheet page
     } else {
       setError("No record found. Please check the enrollment number.");
     }
