@@ -21,8 +21,11 @@ import WorkAt from "./components/WorkAt/WorkAt";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import MarksSheet from "./components/Transcript/MarksSheet";
-import MarksSheetA4 from "./components/Transcript/MarksSheetA4";
+import MarksSheet from "./components/Transcript/BTech_MarksSheet";
+import BTech_MarksSheetA4 from "./components/Transcript/BTech_MarksSheetA4";
+import MTech_MarksSheetA4 from "./components/Transcript/MTech_MarksSheetA4";
+import BTech_MarksSheet from "./components/Transcript/BTech_MarksSheet";
+import MTech_MarksSheet from "./components/Transcript/MTech_MarksSheet";
 
 const App = () => {
   return (
@@ -34,8 +37,10 @@ const App = () => {
         <Route path="/admission" element={<Admission />} />
         {/*  */}
         <Route path="/transcript" element={<Transcript />} />
-        <Route path="/transcript/BGFBTCSE00088385" element={<MarksSheet />} />
-        <Route path="/mark-sheet-A4" element={<MarksSheetA4 />} />
+        <Route path="/transcript/BGFBTCSE00088385" element={<BTech_MarksSheet />} />
+        <Route path="/transcript/BGFMTCSE00095457" element={<MTech_MarksSheet />} />
+        <Route path="/transcript/BGFBTCSE00088385/pdf" element={<BTech_MarksSheetA4 />} />
+        <Route path="/transcript/BGFMTCSE00095457/pdf" element={<MTech_MarksSheetA4 />} />
         {/*  */}
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/work-at" element={<WorkAt />} />

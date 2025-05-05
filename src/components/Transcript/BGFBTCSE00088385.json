@@ -3,7 +3,9 @@
     "name": "DOBARIYA RAVI MANSUKHBHAI",
     "id": "BGFBTCSE00088385",
     "dob": "27.11.1997",
-    "program": "Bachelor of Technology (B.Tech) in Computer Science"
+    "program": "Bachelor of Technology (B.Tech) in Computer Science",
+    "courseStartYear":"2015",
+    "coursecompletionYear":"2019"
   },
   "semesters": [
     {
@@ -11,30 +13,30 @@
       "courses": [
         {
           "title": "Introduction to Programming with C",
-          "code": "CS101",
-          "credits": 4,
-          "grade": "A",
+          "code": "BT-CS101",
+          "credits": 7.2,
+          "grade": "C",
           "examDate": "2016-02-24"
         },
         {
           "title": "Engineering Graphics",
-          "code": "EG101",
-          "credits": 2,
+          "code": "BT-EG101",
+          "credits": 8.1,
           "grade": "B",
           "examDate": "2016-02-25"
         },
         {
           "title": "Communication Skills",
-          "code": "HS101",
-          "credits": 2,
-          "grade": "A",
+          "code": "BT-HS101",
+          "credits": 7.9,
+          "grade": "C",
           "examDate": "2016-02-26"
         },
         {
           "title": "Discrete Mathematics for Computer Science",
-          "code": "MA101",
-          "credits": 3,
-          "grade": "B",
+          "code": "BT-MA101",
+          "credits": 9,
+          "grade": "A",
           "examDate": "2016-02-28"
         }
       ]
@@ -44,29 +46,29 @@
       "courses": [
         {
           "title": "Object-Oriented Programming with C++",
-          "code": "CS102",
-          "credits": 4,
+          "code": "BT-CS102",
+          "credits": 8.7,
           "grade": "B",
           "examDate": "2016-07-16"
         },
         {
           "title": "Basic Electrical Engineering",
-          "code": "EE101",
-          "credits": 3,
-          "grade": "B",
+          "code": "BT-EE101",
+          "credits": 7.8,
+          "grade": "C",
           "examDate": "2016-07-18"
         },
         {
           "title": "Computer Hardware Fundamentals",
-          "code": "CH201",
-          "credits": 3,
+          "code": "BT-CH201",
+          "credits": 8.3,
           "grade": "B",
           "examDate": "2016-07-20"
         },
         {
           "title": "Linear Algebra and Probability for Computer Science",
-          "code": "MA102",
-          "credits": 3,
+          "code": "BT-MA102",
+          "credits": 9.1,
           "grade": "A",
           "examDate": "2016-07-22"
         }
@@ -77,23 +79,23 @@
       "courses": [
         {
           "title": "Java Programming",
-          "code": "CS201",
-          "credits": 3,
+          "code": "BT-CS201",
+          "credits": 7.5,
           "grade": "C",
           "examDate": "2017-02-22"
         },
         {
           "title": "Data Structures and Algorithms",
-          "code": "CS202",
-          "credits": 4,
-          "grade": "B",
+          "code": "BT-CS202",
+          "credits": 9.3,
+          "grade": "A",
           "examDate": "2017-02-24"
         },
         {
           "title": "Technical Writing & Presentation",
-          "code": "HS201",
-          "credits": 2,
-          "grade": "A",
+          "code": "BT-HS201",
+          "credits": 8.1,
+          "grade": "B",
           "examDate": "2017-02-26"
         }
       ]
@@ -103,22 +105,22 @@
       "courses": [
         {
           "title": "Web Development with HTML, CSS, and JavaScript",
-          "code": "CS301",
-          "credits": 4,
-          "grade": "A",
+          "code": "BT-CS301",
+          "credits": 8.6,
+          "grade": "B",
           "examDate": "2017-07-10"
         },
         {
           "title": "Database Management Systems (SQL)",
-          "code": "CS302",
-          "credits": 4,
-          "grade": "B",
+          "code": "BT-CS302",
+          "credits": 7.2,
+          "grade": "C",
           "examDate": "2017-07-12"
         },
         {
           "title": "Computer Architecture & Organization",
-          "code": "CH301",
-          "credits": 3,
+          "code": "BT-CH301",
+          "credits": 8.4,
           "grade": "B",
           "examDate": "2017-07-14"
         }
@@ -129,23 +131,23 @@
       "courses": [
         {
           "title": "Python Programming",
-          "code": "CS401",
-          "credits": 3,
-          "grade": "C",
+          "code": "BT-CS401",
+          "credits": 9.2,
+          "grade": "A",
           "examDate": "2018-02-20"
         },
         {
           "title": "Software Engineering",
-          "code": "CS402",
-          "credits": 3,
+          "code": "BT-CS402",
+          "credits": 8.9,
           "grade": "B",
           "examDate": "2018-02-22"
         },
         {
           "title": "Business Communication",
-          "code": "HS301",
-          "credits": 2,
-          "grade": "A",
+          "code": "BT-HS301",
+          "credits": 8.3,
+          "grade": "B",
           "examDate": "2018-02-24"
         }
       ]
@@ -155,22 +157,22 @@
       "courses": [
         {
           "title": "Mobile App Development with Android (Kotlin & Java)",
-          "code": "CS501",
-          "credits": 4,
-          "grade": "A",
+          "code": "BT-CS501",
+          "credits": 7.7,
+          "grade": "C",
           "examDate": "2018-07-10"
         },
         {
           "title": "Information Security and Cryptography",
-          "code": "CS502",
-          "credits": 3,
-          "grade": "B",
+          "code": "BT-CS502",
+          "credits": 7.9,
+          "grade": "C",
           "examDate": "2018-07-14"
         },
         {
           "title": "Embedded Systems & IoT",
-          "code": "CH401",
-          "credits": 3,
+          "code": "BT-CH401",
+          "credits": 8,
           "grade": "B",
           "examDate": "2018-07-16"
         }
@@ -181,22 +183,22 @@
       "courses": [
         {
           "title": "Full Stack Development with MERN Stack (MongoDB, Express.js, React, Node.js)",
-          "code": "CS601",
-          "credits": 4,
-          "grade": "A",
+          "code": "BT-CS601",
+          "credits": 7.4,
+          "grade": "C",
           "examDate": "2019-02-20"
         },
         {
           "title": "Cloud Computing with AWS and DevOps",
-          "code": "CS602",
-          "credits": 3,
+          "code": "BT-CS602",
+          "credits": 8.7,
           "grade": "B",
           "examDate": "2019-02-22"
         },
         {
           "title": "Networking & System Administration",
-          "code": "CH501",
-          "credits": 3,
+          "code": "BT-CH501",
+          "credits": 9,
           "grade": "A",
           "examDate": "2019-02-24"
         }
@@ -207,27 +209,26 @@
       "courses": [
         {
           "title": "Machine Learning with Python & TensorFlow",
-          "code": "CS701",
-          "credits": 3,
-          "grade": "C",
+          "code": "BT-CS701",
+          "credits": 8.6,
+          "grade": "B",
           "examDate": "2019-07-10"
         },
         {
           "title": "Cyber Security and Ethical Hacking",
-          "code": "CS702",
-          "credits": 3,
-          "grade": "B",
+          "code": "BT-CS702",
+          "credits": 9.4,
+          "grade": "A",
           "examDate": "2019-07-12"
         },
         {
           "title": "AI & Robotics",
-          "code": "CH601",
-          "credits": 3,
-          "grade": "A",
+          "code": "BT-CH601",
+          "credits": 8.2,
+          "grade": "B",
           "examDate": "2019-07-14"
         }
       ]
     }
   ]
 }
-  

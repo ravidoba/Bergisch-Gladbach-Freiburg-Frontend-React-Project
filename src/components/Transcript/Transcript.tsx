@@ -11,14 +11,13 @@ const TranscriptPage: React.FC = () => {
 
   const handleSearch = () => {
     const trimmedEnrollmentNumber = enrollmentNumber.trim();
-  
-    // Simulate a search result or connect to an API for actual data.
-    // For now, we can just check for a mock example.
-    const foundStudentData = trimmedEnrollmentNumber === "BGFBTCSE00088385"; // Example enrollment number
 
-    if (foundStudentData) {
+    // List of valid enrollment numbers
+    const validEnrollmentNumbers = ["BGFBTCSE00088385", "BGFMTCSE00095457"];
+
+    if (validEnrollmentNumbers.includes(trimmedEnrollmentNumber)) {
       setError("");
-      navigate("/transcript/BGFBTCSE00088385"); // Redirect to MarksSheet page
+      navigate(`/transcript/${trimmedEnrollmentNumber}`); // Dynamic redirect
     } else {
       setError("No record found. Please check the enrollment number.");
     }

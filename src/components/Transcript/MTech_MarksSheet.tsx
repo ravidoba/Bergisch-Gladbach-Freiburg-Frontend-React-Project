@@ -1,4 +1,4 @@
-import data from './BGFBTCSE00088385.json';
+import data from './BGFMTCSE00095457.json';
 import './MarksSheet.css';
 import { useRef } from 'react';
 import Logo from '../../../public/Black color logo.png';
@@ -30,47 +30,50 @@ interface Data {
   semesters: Semester[];
 }
 
-const MarksSheet = () => {
+const MTech_MarksSheet = () => {
   const { studentDetails, semesters }: Data = data;
   const marksSheetRef = useRef<HTMLDivElement>(null);
 
-  const calculateGPA = (courses: Course[]) => {
-    const gradePoints: { [key: string]: number } = { A: 1.0, B: 2.0, C: 3.0, D: 4.0, E: 5.0 };
-    let totalCredits = 0;
-    let weightedGradeSum = 0;
+  // Function to calculate total credits and GPA (as totalCredits / subjects) for a semester
+  const calculateSemesterData = (courses: Course[]) => {
+    const totalCredits = parseFloat(
+      courses.reduce((sum, course) => sum + course.credits, 0).toFixed(1)
+    );
+    const numberOfCourses = courses.length;
+    const gpa = numberOfCourses > 0 ? (totalCredits / numberOfCourses).toFixed(1) : '0.0';
+    return { totalCredits, gpa, numberOfCourses };
+  };
 
-    courses.forEach(course => {
-      const gradePoint = gradePoints[course.grade];
-      totalCredits += course.credits;
-      weightedGradeSum += gradePoint * course.credits;
-    });
+  // Calculate overall totals
+  let totalCreditsEarned = 0;
+  let totalSubjects = 0;
 
-    const gpa = weightedGradeSum / totalCredits;
-    return { totalCredits, gpa: gpa.toFixed(2) };
-  }
+  semesters.forEach(semester => {
+    const { totalCredits, numberOfCourses } = calculateSemesterData(semester.courses);
+    totalCreditsEarned = parseFloat((totalCreditsEarned + totalCredits).toFixed(1));
+    totalSubjects += numberOfCourses;
+  });
 
-  // Calculate total credits and GPA for all semesters
-  const totalCreditsAllSemesters = semesters.reduce((sum, semester) => {
-    const { totalCredits } = calculateGPA(semester.courses);
-    return sum + totalCredits;
-  }, 0);
-
-  const weightedGradeSumAllSemesters = semesters.reduce((sum, semester) => {
-    const { totalCredits, gpa } = calculateGPA(semester.courses);
-    const totalGradePoints = totalCredits * parseFloat(gpa);
-    return sum + totalGradePoints;
-  }, 0);
-
-  const overallGPA = (weightedGradeSumAllSemesters / totalCreditsAllSemesters).toFixed(2);
+  const overallGPA = totalSubjects > 0 ? (totalCreditsEarned / totalSubjects).toFixed(1) : '0.0';
 
   return (
-    <div className="marksheet-transcript-banner" style={{ backgroundImage: `url(${TranscriptBanner})`, backgroundSize: "cover", backgroundPosition: "center", width: "100vw" }}>
+    <div
+      className="marksheet-transcript-banner"
+      style={{
+        backgroundImage: `url(${TranscriptBanner})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100vw"
+      }}
+    >
       <div className="marksheet-marks-sheet-container" ref={marksSheetRef}>
         <div className='marksheet-logo-container'>
           <img src={Logo} alt="Logo" />
           <span>Bergisch Gladbach Freiburg University</span>
         </div>
+
         <h1 className="marksheet-title">Student Transcript</h1>
+
         <div className="marksheet-student-info">
           <p><strong>Name:</strong> {studentDetails.name}</p>
           <p><strong>Enrollment No:</strong> {studentDetails.id}</p>
@@ -82,7 +85,7 @@ const MarksSheet = () => {
         </div>
 
         {semesters.map((semester, index) => {
-          const { totalCredits, gpa } = calculateGPA(semester.courses);
+          const { totalCredits, gpa } = calculateSemesterData(semester.courses);
           return (
             <div key={index} className={`marksheet-semester-wrapper ${index % 2 === 1 ? "marksheet-page-break" : ""}`}>
               <div className="marksheet-semester">
@@ -111,22 +114,22 @@ const MarksSheet = () => {
                 </table>
                 <div className="marksheet-semester-summary">
                   <p><strong>Total Credits Earned:</strong> {totalCredits}</p>
-                  <p><strong>Overall GPA:</strong> {gpa}</p>
+                  <p><strong>Semester GPA :</strong> {gpa}</p>
                 </div>
               </div>
             </div>
           );
         })}
 
-        {/* Overall Summary at the End */}
         <div className="marksheet-semester-summary">
           <h3><strong>Total of All Semesters</strong></h3>
-          <p><strong>Total Credits Earned:</strong> {totalCreditsAllSemesters}</p>
-          <p><strong>Overall GPA (All Semesters):</strong> {overallGPA}</p>
+          <p><strong>Total Credits Earned:</strong> {totalCreditsEarned}</p>
+          <p><strong>Total Subjects:</strong> {totalSubjects}</p>
+          <p><strong>Overall GPA (Credits ÷ Subjects):</strong> {overallGPA}</p>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default MarksSheet;
+export default MTech_MarksSheet;
