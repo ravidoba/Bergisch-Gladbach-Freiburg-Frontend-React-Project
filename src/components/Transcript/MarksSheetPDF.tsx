@@ -1,5 +1,4 @@
-import BGFMTCSE00095457 from './BGFMTCSE00095457.json';
-import './MarksSheetA4.css';
+import './MarksSheetPDF.css';
 import { useRef } from 'react';
 import html2pdf from 'html2pdf.js';
 import Logo from '../../../public/Black color logo.png';
@@ -27,13 +26,15 @@ interface StudentDetails {
   coursecompletionYear:string;
 }
 
+interface MarksSheetProps {
+  data: Data;
+}
 interface Data {
   studentDetails: StudentDetails;
   semesters: Semester[];
 }
-
-const MTech_MarksSheetA4 = () => {
-  const { studentDetails, semesters }: Data = BGFMTCSE00095457;
+const MarksSheetPDF: React.FC<MarksSheetProps> = ({ data }) => {
+  const { studentDetails, semesters } = data;
   const marksSheetRef = useRef<HTMLDivElement>(null);
 
   const calculateSemesterData = (courses: Course[]) => {
@@ -144,4 +145,4 @@ const MTech_MarksSheetA4 = () => {
   );
 };
 
-export default MTech_MarksSheetA4;
+export default MarksSheetPDF;

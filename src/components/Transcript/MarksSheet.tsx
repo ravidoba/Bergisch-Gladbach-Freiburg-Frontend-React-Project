@@ -1,4 +1,3 @@
-import data from './BGFBTCSE00088385.json';
 import './MarksSheet.css';
 import { useRef } from 'react';
 import Logo from '../../../public/Black color logo.png';
@@ -23,6 +22,8 @@ interface StudentDetails {
   id: string;
   dob: string;
   program: string;
+  courseStartYear: string,
+  coursecompletionYear: string
 }
 
 interface Data {
@@ -30,8 +31,11 @@ interface Data {
   semesters: Semester[];
 }
 
-const BTech_MarksSheet = () => {
-  const { studentDetails, semesters }: Data = data;
+interface MarksSheetProps {
+  data: Data;
+}
+const MarksSheet: React.FC<MarksSheetProps> = ({ data }) => {
+  const { studentDetails, semesters } = data;
   const marksSheetRef = useRef<HTMLDivElement>(null);
 
 
@@ -56,8 +60,7 @@ const BTech_MarksSheet = () => {
   });
 
   const overallGPA = totalSubjects > 0 ? (totalCreditsEarned / totalSubjects).toFixed(1) : '0.0';
-
-  return (
+   return (
     <div
       className="marksheet-transcript-banner"
       style={{
@@ -80,8 +83,8 @@ const BTech_MarksSheet = () => {
           <p><strong>Enrollment No:</strong> {studentDetails.id}</p>
           <p><strong>Date of Birth:</strong> {studentDetails.dob}</p>
           <p><strong>Program:</strong> {studentDetails.program}</p>
-          <p><strong>Course Start Year:</strong> 2015</p>
-          <p><strong>Course Passing Year:</strong> 2019</p>
+          <p><strong>Course Start Year:</strong> {studentDetails.courseStartYear}</p>
+          <p><strong>Course Completion Year:</strong> {studentDetails.coursecompletionYear}</p>
           <br />
         </div>
 
@@ -126,11 +129,11 @@ const BTech_MarksSheet = () => {
           <h3><strong>Total of All Semesters</strong></h3>
           <p><strong>Total Credits Earned:</strong> {totalCreditsEarned}</p>
           <p><strong>Total Subjects:</strong> {totalSubjects}</p>
-          <p><strong>Overall GPA (Credits ÷ Subjects):</strong> {overallGPA}</p>
+          <p><strong>Overall GPA :</strong> {overallGPA}</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default BTech_MarksSheet;
+export default MarksSheet;

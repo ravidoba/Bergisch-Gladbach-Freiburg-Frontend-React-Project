@@ -1,0 +1,234 @@
+{
+  "studentDetails": {
+    "name": "SAVALIYA DHARMESH KANTIBHAI",
+    "id": "BGFBTCSE00078594",
+    "dob": "07.09.1992",
+    "program": "Bachelor of Technology (B.Tech) in Computer Science",
+    "courseStartYear":"2010",
+    "coursecompletionYear":"2014"
+  },
+  "semesters": [
+    {
+      "semester": "Semester 1 (Fall)",
+      "courses": [
+        {
+          "title": "Introduction to Programming with C",
+          "code": "BT-CS101",
+          "credits": 7.2,
+          "grade": "C",
+          "examDate": "2011-02-24"
+        },
+        {
+          "title": "Engineering Graphics",
+          "code": "BT-EG101",
+          "credits": 8.1,
+          "grade": "B",
+          "examDate": "2011-02-25"
+        },
+        {
+          "title": "Communication Skills",
+          "code": "BT-HS101",
+          "credits": 7.9,
+          "grade": "C",
+          "examDate": "2011-02-26"
+        },
+        {
+          "title": "Discrete Mathematics for Computer Science",
+          "code": "BT-MA101",
+          "credits": 9,
+          "grade": "A",
+          "examDate": "2011-02-28"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 2 (Spring)",
+      "courses": [
+        {
+          "title": "Object-Oriented Programming with C++",
+          "code": "BT-CS102",
+          "credits": 8.7,
+          "grade": "B",
+          "examDate": "2011-07-16"
+        },
+        {
+          "title": "Basic Electrical Engineering",
+          "code": "BT-EE101",
+          "credits": 7.8,
+          "grade": "C",
+          "examDate": "2011-07-18"
+        },
+        {
+          "title": "Computer Hardware Fundamentals",
+          "code": "BT-CH201",
+          "credits": 8.3,
+          "grade": "B",
+          "examDate": "2011-07-20"
+        },
+        {
+          "title": "Linear Algebra and Probability for Computer Science",
+          "code": "BT-MA102",
+          "credits": 9.1,
+          "grade": "A",
+          "examDate": "2011-07-22"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 3 (Fall)",
+      "courses": [
+        {
+          "title": "Java Programming",
+          "code": "BT-CS201",
+          "credits": 7.5,
+          "grade": "C",
+          "examDate": "2012-02-22"
+        },
+        {
+          "title": "Data Structures and Algorithms",
+          "code": "BT-CS202",
+          "credits": 9.3,
+          "grade": "A",
+          "examDate": "2012-02-24"
+        },
+        {
+          "title": "Technical Writing & Presentation",
+          "code": "BT-HS201",
+          "credits": 8.1,
+          "grade": "B",
+          "examDate": "2012-02-26"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 4 (Spring)",
+      "courses": [
+        {
+          "title": "Web Development with HTML, CSS, and JavaScript",
+          "code": "BT-CS301",
+          "credits": 8.6,
+          "grade": "B",
+          "examDate": "2012-07-10"
+        },
+        {
+          "title": "Database Management Systems (SQL)",
+          "code": "BT-CS302",
+          "credits": 7.2,
+          "grade": "C",
+          "examDate": "2012-07-12"
+        },
+        {
+          "title": "Computer Architecture & Organization",
+          "code": "BT-CH301",
+          "credits": 8.4,
+          "grade": "B",
+          "examDate": "2012-07-14"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 5 (Fall)",
+      "courses": [
+        {
+          "title": "Python Programming",
+          "code": "BT-CS401",
+          "credits": 9.2,
+          "grade": "A",
+          "examDate": "2013-02-20"
+        },
+        {
+          "title": "Software Engineering",
+          "code": "BT-CS402",
+          "credits": 8.9,
+          "grade": "B",
+          "examDate": "2013-02-22"
+        },
+        {
+          "title": "Business Communication",
+          "code": "BT-HS301",
+          "credits": 8.3,
+          "grade": "B",
+          "examDate": "2013-02-24"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 6 (Spring)",
+      "courses": [
+        {
+          "title": "Mobile App Development with Android (Kotlin & Java)",
+          "code": "BT-CS501",
+          "credits": 7.7,
+          "grade": "C",
+          "examDate": "2013-07-10"
+        },
+        {
+          "title": "Information Security and Cryptography",
+          "code": "BT-CS502",
+          "credits": 7.9,
+          "grade": "C",
+          "examDate": "2013-07-14"
+        },
+        {
+          "title": "Embedded Systems & IoT",
+          "code": "BT-CH401",
+          "credits": 8,
+          "grade": "B",
+          "examDate": "2013-07-16"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 7 (Fall)",
+      "courses": [
+        {
+          "title": "Full Stack Development with MERN Stack (MongoDB, Express.js, React, Node.js)",
+          "code": "BT-CS601",
+          "credits": 7.4,
+          "grade": "C",
+          "examDate": "2014-02-20"
+        },
+        {
+          "title": "Cloud Computing with AWS and DevOps",
+          "code": "BT-CS602",
+          "credits": 8.7,
+          "grade": "B",
+          "examDate": "2014-02-22"
+        },
+        {
+          "title": "Networking & System Administration",
+          "code": "BT-CH501",
+          "credits": 9,
+          "grade": "A",
+          "examDate": "2014-02-24"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 8 (Spring)",
+      "courses": [
+        {
+          "title": "Machine Learning with Python & TensorFlow",
+          "code": "BT-CS701",
+          "credits": 8.6,
+          "grade": "B",
+          "examDate": "2014-07-10"
+        },
+        {
+          "title": "Cyber Security and Ethical Hacking",
+          "code": "BT-CS702",
+          "credits": 9.4,
+          "grade": "A",
+          "examDate": "2014-07-12"
+        },
+        {
+          "title": "AI & Robotics",
+          "code": "BT-CH601",
+          "credits": 8.2,
+          "grade": "B",
+          "examDate": "2014-07-14"
+        }
+      ]
+    }
+  ]
+}

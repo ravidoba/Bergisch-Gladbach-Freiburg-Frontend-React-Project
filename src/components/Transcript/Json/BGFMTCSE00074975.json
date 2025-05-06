@@ -1,0 +1,45 @@
+{
+  "studentDetails": {
+    "name": "SAVALIYA DHARMESH KANTIBHAI",
+    "id": "BGFMTCSE00084347",
+    "dob": "07.09.1992",
+    "program": "Master of Technology (M.Tech) in Computer Science",
+    "courseStartYear": "2014",
+    "coursecompletionYear": "2016"
+  },
+  "semesters": [
+    {
+      "semester": "Semester 1 (Fall)",
+      "courses": [
+        { "title": "Advanced Data Structures and Algorithms", "code": "MT-CS101", "credits": 9.28, "grade": "A", "examDate": "2015-02-20" },
+        { "title": "Advanced Computer Architecture", "code": "MT-CS102", "credits": 8.76, "grade": "B", "examDate": "2015-02-21" },
+        { "title": "Operating Systems Design", "code": "MT-CS103", "credits": 8.25, "grade": "B", "examDate": "2015-02-22" },
+        { "title": "Elective 1: Machine Learning", "code": "MT-CS104", "credits": 8.04, "grade": "C", "examDate": "2015-02-23" }
+      ]
+    },
+    {
+      "semester": "Semester 2 (Spring)",
+      "courses": [
+        { "title": "Distributed Systems", "code": "MT-CS201", "credits": 9.48, "grade": "A", "examDate": "2015-07-09" },
+        { "title": "Advanced Database Systems", "code": "MT-CS202", "credits": 8.87, "grade": "B", "examDate": "2015-07-10" },
+        { "title": "Compiler Design", "code": "MT-CS203", "credits": 8.55, "grade": "B", "examDate": "2015-07-12" },
+        { "title": "Elective 2: Data Mining", "code": "MT-CS204", "credits": 8.35, "grade": "B", "examDate": "2015-07-13" }
+      ]
+    },
+    {
+      "semester": "Semester 3 (Fall)",
+      "courses": [
+        { "title": "Research Methodology and IPR", "code": "MT-CS301", "credits": 7.73, "grade": "C", "examDate": "2016-02-20" },
+        { "title": "Thesis / Dissertation - Phase I", "code": "MT-CS302", "credits": 9.79, "grade": "A", "examDate": "2016-02-22" },
+        { "title": "Elective 3: IoT", "code": "MT-CS303", "credits": 8.45, "grade": "B", "examDate": "2016-02-24" }
+      ]
+    },
+    {
+      "semester": "Semester 4 (Spring)",
+      "courses": [
+        { "title": "Thesis / Dissertation - Phase II", "code": "MT-CS401", "credits": 10.31, "grade": "A", "examDate": "2016-07-11" },
+        { "title": "Viva Voce", "code": "MT-CS402", "credits": 6.19, "grade": "A", "examDate": "2016-07-12" }
+      ]
+    }
+  ]
+}
