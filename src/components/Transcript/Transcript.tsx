@@ -11,7 +11,7 @@ const TranscriptPage: React.FC = () => {
 
   const validEnrollmentNumbers = [
     "BGFBTCSE00088385",
-    "BGFMTCSE00084346",
+    "BGFMTCSE00095457",
     "BGFMTCSE00074975",
     "BGFBTCSE00078594",
 
@@ -28,16 +28,16 @@ const TranscriptPage: React.FC = () => {
     }
   };
 
-  const handleDownload = () => {
-    const trimmedEnrollmentNumber = enrollmentNumber.trim();
+  // const handleDownload = () => {
+  //   const trimmedEnrollmentNumber = enrollmentNumber.trim();
 
-    if (validEnrollmentNumbers.includes(trimmedEnrollmentNumber)) {
-      setError("");
-      navigate(`/transcript/pdf/${trimmedEnrollmentNumber}`);
-    } else {
-      setError("No record found. Please check the enrollment number.");
-    }
-  };
+  //   if (validEnrollmentNumbers.includes(trimmedEnrollmentNumber)) {
+  //     setError("");
+  //     navigate(`/transcript/pdf/${trimmedEnrollmentNumber}`);
+  //   } else {
+  //     setError("No record found. Please check the enrollment number.");
+  //   }
+  // };
 
   return (
     <div>
@@ -60,7 +60,7 @@ const TranscriptPage: React.FC = () => {
             </div>
             {error && <div className="error-message">{error}</div>}
             {!error && !enrollmentNumber && <p>Please enter a valid enrollment number to search.</p>}
-            <button onClick={handleDownload}>Download</button>
+            {/* <button onClick={handleDownload}>Download</button> */}
           </div>
         </div>
       </div>

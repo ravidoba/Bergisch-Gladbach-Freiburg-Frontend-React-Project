@@ -1,13 +1,13 @@
 .BergischGladbackFreiburg-university, .BergischGladbackFreiburg-university h1 {
-  color: white;
-  background-color: #121212;
+  color: #121212;          /* Changed from white to dark gray */
+  background-color: #ffffff; /* Changed from dark to white */
   margin: 0;
   padding: 0;
 }
 
 .menu-page {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #ffffff; /* Changed from #121212 to white */
+  color: #333333;            /* Changed from light gray to dark gray */
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -35,16 +35,16 @@
 }
 
 .menu-links::-webkit-scrollbar-track {
-  background: #000;
+  background: #f0f0f0;       /* Changed from #000 to light gray */
 }
 
 .menu-links::-webkit-scrollbar-thumb {
-  background: #444;
+  background: #cccccc;       /* Changed from #444 to mid gray */
   border-radius: 5px;
 }
 
 .menu-links::-webkit-scrollbar-thumb:hover {
-  background: #666;
+  background: #999999;       /* Changed from #666 to darker gray */
 }
 
 .menu-links li {
@@ -56,13 +56,13 @@
 
 .menu-links li a, .menu-links li span {
   text-decoration: none;
-  color: #e0e0e0;
+  color: #333333;            /* Changed from #e0e0e0 to dark gray */
   transition: color 0.3s ease;
   padding-left: 15px;
 }
 
 .menu-links li a:hover, .menu-links li span:hover {
-  color: #ffffff;
+  color: #000000;            /* Changed from white to pure black */
   text-decoration: underline;
 }
 
@@ -71,12 +71,12 @@
   position: absolute;
   left: 300px;
   top: 0;
-  background-color: #1e1e1e;
+  background-color: #f9f9f9; /* Changed from #1e1e1e to off-white */
   padding: 10px;
   list-style: none;
   z-index: 10;
   min-width: 300px;
-  border: 1px solid #333;
+  border: 1px solid #dddddd; /* Changed from #333 to light line */
 }
 
 .menu-links li:hover .submenu {
@@ -90,17 +90,17 @@
 
 .submenu li a {
   text-decoration: none;
-  color: #e0e0e0;
+  color: #555555;            /* Changed from #e0e0e0 to mid-dark gray */
 }
 
 .submenu li a:hover {
-  color: #ffffff;
+  color: #000000;            /* Changed from white to black */
   text-decoration: underline;
 }
 
 .vertical-divider {
   width: 2px;
-  background-color: #333;
+  background-color: #dddddd; /* Changed from #333 to light gray line */
   margin: 0 20px;
 }
 

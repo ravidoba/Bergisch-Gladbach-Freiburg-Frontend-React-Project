@@ -22,45 +22,47 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import DynamicTranscript from "./components/Transcript/DynamicTranscript ";
-import MarksSheetA4 from "./components/Transcript/MarksSheetPDF";
-import MarksSheetPDF from "./components/Transcript/MarksSheetPDF";
 import DynamicTranscriptPDF from "./components/Transcript/DynamicTranscriptPDF";
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/admission" element={<Admission />} />
-        {/*  */}
-        <Route path="/transcript" element={<Transcript />} />
-        <Route path="/transcript/:enrollmentNumber" element={<DynamicTranscript />} />
-        <Route path="/transcript/pdf/:enrollmentNumber" element={<DynamicTranscriptPDF />} />
-        {/*  */}
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/work-at" element={<WorkAt />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+      <div className="app-container">
+        <Navbar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/admission" element={<Admission />} />
+            {/*  */}
+            <Route path="/transcript" element={<Transcript />} />
+            <Route path="/transcript/:enrollmentNumber" element={<DynamicTranscript />} />
+            <Route path="/transcript/pdf/:enrollmentNumber" element={<DynamicTranscriptPDF />} />
+            {/*  */}
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/work-at" element={<WorkAt />} />
+            <Route path="/contact-us" element={<ContactUs />} />
 
-        {/* Add new Academic related pages */}
-        <Route path="/engineering" element={<Engineering />} />
-        <Route path="/business-management" element={<BusinessManagement />} />
-        <Route path="/art-and-humanities" element={<ArtAndHumanities />} />
-        <Route path="/health-science" element={<HealthScience />} />
+            {/* Add new Academic related pages */}
+            <Route path="/engineering" element={<Engineering />} />
+            <Route path="/business-management" element={<BusinessManagement />} />
+            <Route path="/art-and-humanities" element={<ArtAndHumanities />} />
+            <Route path="/health-science" element={<HealthScience />} />
 
-        {/* Add new Campus related pages */}
-        <Route path="/libraries" element={<Libraries />} />
-        <Route path="/museums" element={<Museums />} />
-        <Route path="/athletics" element={<Athletics />} />
+            {/* Add new Campus related pages */}
+            <Route path="/libraries" element={<Libraries />} />
+            <Route path="/museums" element={<Museums />} />
+            <Route path="/athletics" element={<Athletics />} />
 
-        {/* Add Footer related pages */}
-        <Route path="/report-copyright-infringement" element={<ReportCopyrightInfringement />} />
-        <Route path="/report-security-issue" element={<ReportSecurityIssue />} />
-        <Route path="/trademark-notice" element={<TrademarkNotice />} />
+            {/* Add Footer related pages */}
+            <Route path="/report-copyright-infringement" element={<ReportCopyrightInfringement />} />
+            <Route path="/report-security-issue" element={<ReportSecurityIssue />} />
+            <Route path="/trademark-notice" element={<TrademarkNotice />} />
 
-      </Routes>
-      <Footer />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 };

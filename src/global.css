@@ -1,119 +1,201 @@
 @font-face {
-    font-family: 'SFProDisplayBlackItalic'; /* Replace with the desired font family name */
-    src: url('../public/fonts/SFPRODISPLAYBLACKITALIC.OTF') format('opentype'); /* Adjust path accordingly */
-  }
+  font-family: 'SFProDisplayBlackItalic';
+  /* Replace with the desired font family name */
+  src: url('../public/fonts/SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
+  /* Adjust path accordingly */
+}
 
 
-  /* Academics and Campus */
-  .engineering-item.normal-order {
-    flex-direction: row;
-  }
-  
-  .engineering-item.reverse-order {
-    flex-direction: row-reverse;
-  }
-  
-  .engineering-container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  
+/* Academics and Campus */
+.engineering-item.normal-order {
+  flex-direction: row;
+}
+
+.engineering-item.reverse-order {
+  flex-direction: row-reverse;
+}
+
+.engineering-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.engineering-item {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.engineering-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.engineering-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.engineering-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.engineering-item.reverse-order .engineering-content {
+  padding-left: 0px;
+}
+
+.engineering-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.engineering-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.engineering-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
   .engineering-item {
-    display: flex;
-    margin-bottom: 40px;
-    align-items: stretch;
-    flex-wrap: wrap;
-  }
-  
-  .engineering-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
   }
-  
+
+  .engineering-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .engineering-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-  }
-  
-  .engineering-content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
-  
-  .engineering-item.reverse-order .engineering-content {
-    padding-left: 0px;
-  }
-  
-  .engineering-content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: black;
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  .engineering-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: black;
-  }
-  
-  .engineering-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: black;
-  }
-  
-  .centered-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .engineering-item {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .engineering-image {
-      width: 100%;
-      margin-bottom: 20px; /* Add spacing between image and content */
-    }
-  
-    .engineering-image img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .engineering-content {
-      width: 100%;
-      text-align: center;
-      padding: 10px;
-    }
-  }
-  .engineering-banner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  .engineering img {
-    width: 100%;
     height: auto;
-    display: block;
   }
+
+  .engineering-content {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .engineering-banner {
+    height: 300px;
+  }
+
+  .banner-text {
+    width: 90%;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .banner-text p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .app-container {
+    min-height: 100dvh; 
+  }
+
+  .main-content {
+    padding: 10px; 
+        display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Banner CSS */
+.engineering-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.engineering-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  z-index: 2;
+}
+
+.banner-text h1 {
+  font-family: 'SFProDisplayBlackItalic', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.engineering-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* NEW */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white; 
+}
+
+.main-content {
+  flex: 1;
+}

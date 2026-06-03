@@ -51,4 +51,37 @@
   .contact-right img {
     width: 90%;
   }
+.email-list {
+  margin: 20px 0;
+}
+
+.email-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-left: 4px solid #1d3557;
+  border-radius: 4px;
+}
+
+.email-item span {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.email-item a {
+  color: #1d3557;
+  text-decoration: none;
+}
+
+.email-item a:hover {
+  text-decoration: underline;
+}
+
+.address {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
 }

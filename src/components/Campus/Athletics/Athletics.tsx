@@ -9,7 +9,7 @@ import FootballImage from "../../../assets/Campus/AthleticsImages/Football.png";
 import GolfImage from "../../../assets/Campus/AthleticsImages/Golf.png";
 import HighJumpImage from "../../../assets/Campus/AthleticsImages/HighJump.png";
 import IceHockeyImage from "../../../assets/Campus/AthleticsImages/IceHockey.png";
-import { default as LongJumpImage, default as PoleVaultImage } from "../../../assets/Campus/AthleticsImages/LongJump.png";
+import LongJumpImage from "../../../assets/Campus/AthleticsImages/LongJump.png";
 import SprintImage from "../../../assets/Campus/AthleticsImages/Race.png";
 import ShotPutImage from "../../../assets/Campus/AthleticsImages/ShotPut.png";
 import TennisImage from "../../../assets/Campus/AthleticsImages/Tennis.png";
@@ -45,11 +45,6 @@ const engineering: React.FC = () => {
       title: "Long Jump",
       image: LongJumpImage,
       description: `Athletes in the long jump combine speed, strength, and technique to leap as far as possible into a sandpit. Precision in takeoff and landing are key, making it a true test of skill and athleticism.`,
-    },
-    {
-      title: "Pole Vault",
-      image: PoleVaultImage,
-      description: `In the pole vault, athletes use a pole to propel themselves over a bar set at increasing heights. This event demands a unique combination of strength, agility, and focus, challenging participants to clear the bar while maintaining perfect form.`,
     },
     {
       title: "Shot Put",

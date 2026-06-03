@@ -65,7 +65,7 @@ const MarksSheetPDF: React.FC<MarksSheetProps> = ({ data }) => {
     const element = marksSheetRef.current!;
     const options = {
       margin: 5,
-      filename: `${studentDetails.name}_${studentDetails.program}_${studentDetails.id}.pdf`,
+      filename: `${studentDetails.id}.pdf`,
       html2canvas: { scale: 2 },
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };

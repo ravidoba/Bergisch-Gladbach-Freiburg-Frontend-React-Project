@@ -30,6 +30,7 @@ body {
   text-align: left;
   box-sizing: border-box;
   transition: transform 0.3s ease-in-out;
+  border-radius: 7px;
 }
 
 .admission-form:hover {
@@ -110,10 +111,12 @@ body {
   .admission-container {
     padding: 20px;
   }
+
   .admission-form {
     width: 100%;
     padding: 25px;
   }
+
   .admission-form h2 {
     font-size: 24px;
   }
@@ -123,6 +126,7 @@ body {
   .admission-form {
     padding: 20px;
   }
+
   .admission-form h2 {
     font-size: 22px;
   }

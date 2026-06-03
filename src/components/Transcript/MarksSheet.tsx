@@ -60,7 +60,7 @@ const MarksSheet: React.FC<MarksSheetProps> = ({ data }) => {
   });
 
   const overallGPA = totalSubjects > 0 ? (totalCreditsEarned / totalSubjects).toFixed(1) : '0.0';
-   return (
+  return (
     <div
       className="marksheet-transcript-banner"
       style={{
@@ -128,8 +128,8 @@ const MarksSheet: React.FC<MarksSheetProps> = ({ data }) => {
         <div className="marksheet-semester-summary">
           <h3><strong>Total of All Semesters</strong></h3>
           <p><strong>Total Credits Earned:</strong> {totalCreditsEarned}</p>
-          <p><strong>Total Subjects:</strong> {totalSubjects}</p>
           <p><strong>Overall GPA :</strong> {overallGPA}</p>
+          <p><strong>Grade : </strong> B</p>
         </div>
       </div>
     </div>

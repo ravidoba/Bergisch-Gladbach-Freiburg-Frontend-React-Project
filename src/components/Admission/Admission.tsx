@@ -51,6 +51,7 @@ interface FormData {
   course: string;
   lastQualification: string;
   remarks: string;
+  email: string;
   file: File | null;
 }
 
@@ -62,6 +63,7 @@ const Admission: React.FC = () => {
     course: "",
     lastQualification: "",
     remarks: "",
+    email: "",
     file: null,
   });
 
@@ -107,7 +109,7 @@ const Admission: React.FC = () => {
     if (!formData.lastQualification)
       newErrors.lastQualification = "Last Qualification is required.";
     if (!formData.file) newErrors.file = "File upload is required.";
-
+    if (!formData.email) newErrors.file = "Email is required.";
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       toast.error("Please fix the errors in the form.");
@@ -128,6 +130,7 @@ const Admission: React.FC = () => {
       course: "",
       lastQualification: "",
       remarks: "",
+      email:"",
       file: null,
     });
   };
@@ -200,6 +203,19 @@ const Admission: React.FC = () => {
               onChange={handleFileChange}
             />
             {errors.file && <div className="error">{errors.file}</div>}
+
+            <label>Email</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && (
+              <div className="error">{errors.email}</div>
+            )}
+
 
             <label>Remarks</label>
             <textarea
